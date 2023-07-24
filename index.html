@@ -11,7 +11,7 @@
 
   <meta name="title" content="Coders Forum | Panimalar">
   <meta name="description" content="Whether you're a seasoned programmer or just starting your coding journey, Coders Forum welcomes you with open arms.">
-  <meta name="keywords" content="panimalar, coding, society, psdc, cse, programmers club, clubs, technical clubs, panimalar club, pani, pani club, panimalar tcs, tcs, progamming club, panimalar, progamming club, best club in panimalar, psdc, panimalar student, club at panimalar, society panimalar, college clubs, coding club chennai, chennai clubs, chennai coding, programming club chennai, tcs chennai, tamil nadu, club in tamilnadu, poonamallee clubs, poonamallee coding, college chennai, cultural chennai, college cultural chennai, club chennai, it chennai, chennai computers">
+  <meta name="keywords" content="panimalar, coding, society, psdc, cse, programmers club, coders forum, cse club, clubs, technical clubs, panimalar club, pani, pani club, panimalar tcs, tcs, progamming club, panimalar, progamming club, best club in panimalar, psdc, panimalar student, club at panimalar, society panimalar, college clubs, coding club chennai, chennai clubs, chennai coding, programming club chennai, tcs chennai, tamil nadu, club in tamilnadu, poonamallee clubs, poonamallee coding, college chennai, cultural chennai, college cultural chennai, club chennai, it chennai, chennai computers">
   <meta name="robots" content="index, follow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
@@ -303,27 +303,31 @@
           <p>Resources</p> 
           <h2>Fueling Success</h2>
         </div>
-
         <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" id="resource-1" data-aos="zoom-in" data-aos-delay="200">
+            
             <div class="icon-box">
-              <div class="icon"><img src = "./assets/img/Resources/docker.png" style = "width: 120px; height: auto;"></div>
-              <br>
-              <h4><a href="https://www.udemy.com/course/docker-essentials/" target="_blank">Docker Essentials</a></h4>
-              <p>Docker is an open-source platform that allows developers to automate the deployment, scaling, and management of applications within lightweight, portable containers.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><img src = "./assets/img/Resources/harvard.png" style = "width: 120px; height: auto;"></div>
+              
+              <div class="icon"><a href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript" target="_blank"><img src = "./assets/img/Resources/harvard.png" style = "width: 120px; height: auto;"></a></div>
               <br>
               <h4><a href="https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript" target="_blank">CS50's Web Programming with Python and JavaScript</a></h4>
               <p>You'll explore Python, JavaScript, and SQL while harnessing the power of frameworks like Django, React, and Bootstrap with CS50.</p>
             </div>
           </div>
+        
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" id="resource-2" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><img src = "./assets/img/Resources/docker.png" style = "width: 120px; height: auto;"></div>
+                <br>
+                <h4><a href="https://www.udemy.com/course/docker-essentials/" target="_blank">Docker Essentials</a></h4>
+                <p>Docker is an open-source platform that allows developers to automate the deployment, scaling, and management of applications within lightweight, portable containers.</p>
+              </div>
+            </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" id="resource-3" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><img src = "./assets/img/Resources/PyQt.png" style = "width: 120px; height: auto;"></div>
               <br>
@@ -357,10 +361,10 @@
                 <i class="bi bi-envelope" style = "color : #ffc451 ;"></i> &nbsp; <span style = "font-family : 'Consolas' ;">coders_forum@outlook.com</span><br>
               </p>
               <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                 <a href="https://github.com/Coders-Forum" target="_blank" class="github"><i class="bx bxl-github"></i></a>
                 <a href="https://www.instagram.com/coders_forum/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
+                </div>
             </div>
           </div>
 
@@ -404,7 +408,36 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <script src="assets/js/main.js"></script>
+
+<script>
+    const div1 = document.getElementById('resource-1');
+    const div2 = document.getElementById('resource-2');
+    const div3 = document.getElementById('resource-3');
+
+    div1.style.cursor = 'pointer';
+    div2.style.cursor = 'pointer';
+    div3.style.cursor = 'pointer';
+
+    div1.addEventListener('click', function() {
+        const linkToOpen = 'https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div2.addEventListener('click', function() {
+        const linkToOpen = 'https://www.udemy.com/course/docker-essentials/';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div3.addEventListener('click', function() {
+        const linkToOpen = 'https://www.youtube.com/watch?v=ot94H3-d5d8';
+        window.open(linkToOpen, '_blank');
+    });
+</script> 
 
 </body>
 
