@@ -620,7 +620,7 @@ section {
 }
 
 @media (max-width: 991px) {
-  .section-title h2::after, h2::before {
+  .section-title h2::after, h2::before, .section-title-wf h2::after, h2::before {
     content: "";
     width: 80px;
     height: 2px;
@@ -632,7 +632,7 @@ section {
 }
 
 @media (max-width: 667px) {
-  .section-title h2::after, h2::before {
+  .section-title h2::after, h2::before, .section-title-wf h2::after, h2::before{
     content: "";
     width: 30px;
     height: 2px;
@@ -665,6 +665,21 @@ section {
   border-radius: 20px; 
   display: inline-block;
   width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .wall-of-fame-row {
+    flex-direction: column;
+  }
+
+  .wall-of-fame-image {
+    max-height: 300px;
+  }
+
+  .premium-card {
+    min-height: 90vh;
+  }
 }
 
 
