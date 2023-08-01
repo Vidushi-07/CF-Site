@@ -581,7 +581,26 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after, h2::before {
+.section-title-wf h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #373737;
+  font-family: "Poppins", sans-serif;
+}
+
+.custom-card {
+  max-height: 300px;
+  overflow: hidden;
+  padding: 30px;
+}
+
+
+.section-title h2::after, h2::before, .section-title-wf h2::after, h2::before {
   content: "";
   width: 120px;
   height: 2px;
@@ -622,6 +641,32 @@ section {
     margin: 4px 10px;
   }
 }
+
+
+
+
+.premium-card {
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #f8f8f8;
+  transition: transform 0.3s ease; 
+  overflow: hidden;
+  width: 100%;
+}
+
+.premium-card:hover {
+  transform: translateY(-3px); 
+}
+
+.photo-frame {
+  border: 10px solid silver;
+  padding: 5px;
+  border-radius: 20px; 
+  display: inline-block;
+  width: 100%;
+}
+
 
 /*--------------------------------------------------------------
 # About
