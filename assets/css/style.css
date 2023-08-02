@@ -582,7 +582,7 @@ section {
 }
 
 .section-title-wf h2 {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -600,12 +600,21 @@ section {
 }
 
 
-.section-title h2::after, h2::before, .section-title-wf h2::after, h2::before {
+.section-title h2::after, h2::before{
   content: "";
   width: 120px;
   height: 2px;
   display: inline-block;
   background: #ffde9e;
+  margin: 4px 10px;
+}
+
+.section-title-wf h2::after, h2::before {
+  content: "";
+  width: 120px;
+  height: 3px;
+  display: inline-block;
+  background: gold;
   margin: 4px 10px;
 }
 
@@ -647,27 +656,22 @@ section {
 
 .premium-card {
   border: none; /* Remove default border */
-  border-radius: 10px; /* Rounded corners */
+  border-radius: 0; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  background-color: #f8f8f8;
   transition: transform 0.3s ease; 
+  background-image: url(assets/img/card-bg.png) ;
   overflow: hidden;
   width: 100%;
 }
 
-.premium-card:hover {
-  transform: translateY(-3px); 
-}
 
 .photo-frame {
-  border: 10px solid silver;
-  padding: 5px;
-  border-radius: 20px; 
   display: inline-block;
   width: 100%;
-}
-
-
+  /*border: 10px solid #fcf2e0;*/
+  border: 10px solid rgb(252, 242, 224, 0.3);
+  padding: 10px;
+  }
 @media screen and (max-width: 768px) {
   .wall-of-fame-row {
     flex-direction: column;
