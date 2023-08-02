@@ -587,7 +587,7 @@ section {
   padding: 0;
   line-height: 1px;
   margin: 0 0 5px 0;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   color: #373737;
   font-family: "Poppins", sans-serif;
@@ -629,12 +629,21 @@ section {
 }
 
 @media (max-width: 991px) {
-  .section-title h2::after, h2::before, .section-title-wf h2::after, h2::before {
+  .section-title h2::after, h2::before{
     content: "";
     width: 80px;
     height: 2px;
     display: inline-block;
     background: #ffde9e;
+    margin: 4px 10px;
+  }
+
+  .section-title-wf h2::after, h2::before {
+    content: "";
+    width: 60px;
+    height: 3px;
+    display: inline-block;
+    background: gold;
     margin: 4px 10px;
   }
   
@@ -655,8 +664,8 @@ section {
 
 
 .premium-card {
-  border: none; /* Remove default border */
-  border-radius: 0; /* Rounded corners */
+  border: none;
+  border-radius: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s ease; 
   background-image: url(assets/img/card-bg.png) ;
@@ -684,6 +693,14 @@ section {
   .premium-card {
     min-height: 90vh;
   }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .wall-of-fame-image {
+    max-height: 300px;
+  }
+
 }
 
 
