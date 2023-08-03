@@ -651,12 +651,18 @@ section {
 
 @media (max-width: 667px) {
   .section-title h2::after, h2::before, .section-title-wf h2::after, h2::before{
-    content: "";
-    width: 30px;
-    height: 2px;
-    display: inline-block;
-    background: #ffde9e;
-    margin: 4px 10px;
+    display: none;
+  }
+
+  .section-title-wf h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #373737;
+    font-family: "Poppins", sans-serif;
   }
 }
 
