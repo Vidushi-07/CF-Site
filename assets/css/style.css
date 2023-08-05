@@ -25,15 +25,39 @@ h6 {
 
 #poster{
   width : 800px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #poster-div{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.winners-info {
+  position: relative;
+  overflow: hidden;
+}
+
+.winners-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Darker background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+}
+
+.winners-info:hover .winners-overlay {
+  opacity: 1;
 }
 /*--------------------------------------------------------------
 # Back to top button
@@ -449,13 +473,10 @@ h6 {
 
 #learn-more-btn{
   border: 2.5px solid #ffc451 ;
-  color:#ffc451;
-  font-size: 16px;
-}
-
-#learn-more-btn:hover{
   background: #ffc451 ;
   color:#fff;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 #hero h2, h3 {
