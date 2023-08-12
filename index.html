@@ -16,8 +16,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
 
-  <link href="assets/img/club-logo.png" rel="icon">
-  <link href="assets/img/club-logo.png" rel="icon">
+  <link href="assets/img/club-logo.ico" rel="icon">
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -46,7 +45,6 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="/about.html">About</a></li>
           <li><a class="nav-link scrollto " href="/events.html">Events</a></li>
-          <li><a class="nav-link scrollto" href="#services">Resources</a></li>
           <li><a class="nav-link scrollto" href="/gallery.html">Gallery</a></li>
           <li><a class="nav-link scrollto" href="/walloffame.html">Wall Of Fame</a></li>
         </ul>
@@ -63,7 +61,6 @@
       <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
         <div class="col-xl-8 col-lg-8">
           <h1 id = "index-hero">Coders Forum</h1>
-          <br>
           <br>
           <h3 >Where Inspiration Meets Creation!</h3>
         </div>
@@ -274,7 +271,44 @@
           <p>Resources</p> 
           <h2>Fueling Success</h2>
         </div>
+
         <div class="row">
+          
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" id="resource-4" data-aos="zoom-in" data-aos-delay="200">
+            
+            <div class="icon-box">
+              
+              <div class="icon"><a href="" target="_blank"><img src = "./assets/img/Resources/QOF.jpeg" style = "width: 120px; height: auto; border-radius: 50%;"></a></div>
+              <br>
+              <h4><a href="" target="_blank">QueryOverFlow</a></h4>
+              <p>QueryOverFlow is an Online Platform [Whatsapp group] where you can ask Questions related to coding and get answers from the Club members.<br>
+                <small><strong>Note:</strong> Exclusively for Members of Coders Forum.</small>
+              </p>
+            </div>
+          </div>
+        
+
+          
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" id="resource-5" data-aos="zoom-in" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><a href="https://github.com/Coders-Forum/July-Monthly-Contest-MATricks" target="_blank"><img src = "./assets/img/Resources/coding.png" style = "width: 120px; height: auto;"></a></div>
+                <br>
+                <h4><a href="https://github.com/Coders-Forum/July-Monthly-Contest-MATricks" target="_blank">Coding Practice</a></h4>
+                <p>Refine your coding proficiency by engaging with the contest problems from the previous month. Elevate your skill set through practical application and mastery of real-world coding scenarios.</p>
+              </div>
+            </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" id="resource-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><a href="https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR" target="_blank"><img src = "./assets/img/Resources/react.png" style = "width: 120px; height: auto;"></a></div>
+              <br>
+              <h4><a href="https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR" target="_blank">React JS For Beginners </a></h4>
+              <p>Expand your knowledge of React with this online course. Discover advanced techniques, tackle real-world projects, and solidify your expertise in React development.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style = "margin-top: 30px;">
           
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" id="resource-1" data-aos="zoom-in" data-aos-delay="200">
             
@@ -307,6 +341,8 @@
             </div>
           </div>
         </div>
+
+        
 
       </div>
     </section><!-- End Services Section -->
@@ -345,10 +381,11 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-link"></i> <a href="#portfolio">Events</a></li>
+              <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
               <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
               <li><i class="bx bx-link"></i> <a href="#services">Resources</a></li>
               <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
+              <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
             </ul>
           </div>
 
@@ -389,10 +426,16 @@
     const div1 = document.getElementById('resource-1');
     const div2 = document.getElementById('resource-2');
     const div3 = document.getElementById('resource-3');
+    const div4 = document.getElementById('resource-4');
+    const div5 = document.getElementById('resource-5');
+    const div6 = document.getElementById('resource-6');
 
     div1.style.cursor = 'pointer';
     div2.style.cursor = 'pointer';
     div3.style.cursor = 'pointer';
+    div4.style.cursor = 'pointer';
+    div5.style.cursor = 'pointer';
+    div6.style.cursor = 'pointer';
 
     div1.addEventListener('click', function() {
         const linkToOpen = 'https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript';
@@ -406,6 +449,16 @@
 
     div3.addEventListener('click', function() {
         const linkToOpen = 'https://www.youtube.com/watch?v=ot94H3-d5d8';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div5.addEventListener('click', function() {
+        const linkToOpen = 'https://github.com/Coders-Forum/July-Monthly-Contest-MATricks';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div6.addEventListener('click', function() {
+        const linkToOpen = 'https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR';
         window.open(linkToOpen, '_blank');
     });
 </script> 
