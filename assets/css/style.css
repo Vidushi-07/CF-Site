@@ -153,7 +153,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 #header .logo {
@@ -357,7 +357,9 @@ h6 {
   position: absolute;
   top: 15px;
   right: 15px;
+  transition: 0.5s;
 }
+
 
 .navbar-mobile ul {
   display: block;
@@ -367,16 +369,30 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #151515;
   overflow-y: auto;
   transition: 0.3s;
+  z-index: 9998;
+  animation: slideIn 0.5s ease-in-out;
 }
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #151515;
+  color: #fff;
 }
 
 .navbar-mobile a:hover,
@@ -473,7 +489,14 @@ h6 {
 
 #learn-more-btn{
   border: 2.5px solid #ffc451 ;
-  background: #ffc451 ;
+  color:#ffc451;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#learn-more-btn:hover{
+  border: 2.5px solid #ffc451 ;
+  background-color: #ffc451;
   color:#fff;
   font-size: 16px;
   font-weight: 600;
@@ -626,7 +649,7 @@ section {
   width: 120px;
   height: 2px;
   display: inline-block;
-  background: #ffde9e;
+  background: gold;
   margin: 4px 10px;
 }
 
@@ -1715,50 +1738,6 @@ section {
   color: #ffc451;
 }
 
-#footer .footer-top .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4px;
-}
-
-#footer .footer-top .footer-newsletter form input[type=email] {
-  border: 0;
-  padding: 4px;
-  width: calc(100% - 110px);
-}
-
-#footer .footer-top .footer-newsletter form input[type=submit] {
-  position: absolute;
-  top: 0;
-  right: -2px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #ffc451;
-  color: #151515;
-  transition: 0.3s;
-  border-radius: 0 4px 4px 0;
-}
-
-#footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #ffcd6b;
-}
-
-#footer .copyright {
-  text-align: center;
-  padding-top: 30px;
-}
-
-#footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: #fff;
-}
 
 @media (max-width: 992px) {
   #our-team{
