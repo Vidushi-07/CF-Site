@@ -1802,3 +1802,16 @@ section {
   font-size: 16px;
   font-weight: 600;
 }
+
+.outcomes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 10px;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  padding: 10px 12px;
+  background: #fff;
+  transition: ease-in-out 0.3s;
+}
