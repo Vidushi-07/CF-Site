@@ -1,3 +1,107 @@
+/*---------Timer---------*/
+
+.timer-container {
+  height: 150px;
+  max-width: 880px; /* Set a maximum width to make it responsive */
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#title {
+  color: white;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);;
+}
+
+.timer {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(40px);
+}
+
+.timer span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  color: #f8f9fa;
+  margin-bottom: 20px;
+}
+
+.timer span::after {
+  font-size: 16px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#days::after {
+  content: 'DAYS';
+}
+
+#hours::after {
+  content: 'HOURS';
+}
+
+#minutes::after {
+  content: 'MINS';
+}
+
+#seconds::after {
+  content: 'SECS';
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 678px) {
+  .timer-container {
+    max-width: 110%; /* Set the maximum width to 100% for smaller screens */
+  }
+
+  .timer span {
+    font-size: 48px; /* Adjust font size for smaller screens */
+    width: 55px; /* Adjust width for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .timer span::after {
+    font-size: 12px; /* Adjust font size for smaller screens */
+    bottom: -3px; /* Adjust bottom position for smaller screens */
+  }
+}
+
+#code-body {
+  font-family: "Open Sans", sans-serif;
+  background: #090909;
+}
+
+#code-main {
+  border: 0.5px solid #6eff4d;
+  margin: 10px;
+  color: #fff;
+}
+
+/*TIMELINE*/
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+}
+
+/*TIMELINE*/
+
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -451,6 +555,30 @@ h6 {
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
   position: relative;
+}
+
+#code-hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/code-bg.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+#code-hero .container {
+  position: relative;
+  padding-top: 74px;
+  text-align: center;
+}
+
+#code-hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 
@@ -1452,141 +1580,7 @@ section {
   bottom: 15px;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact .info {
-  width: 100%;
-  background: #fff;
-}
 
-.contact .info i {
-  font-size: 20px;
-  background: #ffc451;
-  color: #151515;
-  float: left;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #151515;
-}
-
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #484848;
-}
-
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
-}
-
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  border-radius: 4px;
-}
-
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: #ffc451;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #ffc451;
-  border: 0;
-  padding: 10px 24px;
-  color: #151515;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #ffcd6b;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Breadcrumbs
