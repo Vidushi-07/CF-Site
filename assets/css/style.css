@@ -15,18 +15,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.4);;
 }
 
 .timer {
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(40px);
+  backdrop-filter: blur(30px);
 }
 
 .timer span {
@@ -72,6 +71,16 @@
     font-size: 50px;
   }
 
+  .rules-list {
+    list-style-position: outside;
+    line-height: 30px;
+  }
+
+  
+  .card {
+    padding: 10px;
+  }
+
   .timer span {
     font-size: 48px;
     width: 55px;
@@ -88,6 +97,7 @@
   font-family: "Open Sans", sans-serif;
   background: #090909;
 }
+
 
 
 /*TIMELINE*/
@@ -203,7 +213,6 @@
   margin-top: 30px;
   color: #fff;
   border-bottom: solid #11998e;
-  border-top: solid #11998e;
 }
 
 
@@ -211,6 +220,12 @@
   color: #ffc451;
   font-size: 22px;
   font-weight: 600;
+}
+
+.rules{
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 
@@ -355,6 +370,7 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
 }
 
 /*--------------------------------------------------------------
@@ -671,7 +687,7 @@ h6 {
 #code-hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/code-bg.jpg") top center;
+  background: url("../img/code.jpg") top center;
   background-size: cover;
   position: relative;
 }
@@ -684,7 +700,7 @@ h6 {
 
 #code-hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.11);
+  background: rgba(0, 0, 0, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -949,7 +965,11 @@ section {
   }
 }
 
-
+.card {
+  background-color: #222;
+  color: #fff;
+  padding: 30px;
+}
 
 
 .premium-card {
@@ -1159,6 +1179,37 @@ section {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
+}
+
+.code-cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/code.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+  border-bottom: solid #11998e;
+}
+
+.code-cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-top: 10px;
+  color: #FFF ;
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+}
+
+
+
+.code-cta h4 {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .cta h3, h4 {
