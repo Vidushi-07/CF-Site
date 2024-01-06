@@ -82,10 +82,41 @@
   </section>
 
   <main id="code-main">
+
+    <section class="code-page">
+      <div class="container" data-aos="fade-up">
+        <div class="row" style= "margin-top: 60px;">
+          <div class = "col-lg-7 order-1 order-lg-2">
+              <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
+                <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px;">Purpose</span>
+              </div>
+
+              <div>
+                  <p  style = "text-align : justify;">
+                    Serving as more than just a contest, our primary objective is to provide a dynamic learning platform where individuals, regardless of their coding proficiency, can cultivate and refine their skills.  The contest's challenges are meticulously crafted to stimulate problem-solving abilities, enhance algorithmic thinking, and contribute to the continuous growth of participants in the ever-evolving landscape of programming.
+                  </p>  
+
+                  <p  style = "text-align : justify;">
+                    In addition to skill development, the PEC Code Quest aims to foster a sense of community and recognition. Through dedicated forums and networking opportunities, participants have the chance to connect with like-minded individuals, sharing insights and experiences. Our commitment to diversity ensures an inclusive environment, welcoming participants from all backgrounds. Whether you're a seasoned coder or a newcomer, your contributions are celebrated, and the contest serves as a stage for recognition. Join us in the PEC Code Quest 2024, where we not only celebrate coding excellence but also cultivate a genuine passion for programming, making this quest an enriching and memorable experience for all participants.
+                  </p>
+              </div>
+          </div>
+        <div class = "col-lg-5 order-1 order-lg-2 hero-img"  data-aos="zoom-in" data-aos-delay="400" style = "display: flex; align-items: center; justify-content: center;">   
+
+          <dotlottie-player src="https://lottie.host/52ed7342-f5af-4f8d-809b-9bf1461c3b6c/CJlH0Eb5AL.json" background="transparent" speed="1" style="width: 550px; height: 450px;" loop autoplay></dotlottie-player>
+        </div>
+      </div>
+      <p>
+        <br>
+        <br>
+      </p>
+    </div>
+    </section>
+
     <section id="code-timeline" class="d-flex flex-column align-items-center justify-content-center">
       <div class="row">
       <div class="container"data-aos="zoom-in">
-        <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px">Important Dates</span>
+        <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px">Timeline</span>
       </div>
       </div>
 
@@ -251,6 +282,8 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
@@ -290,18 +323,6 @@
 
     // Initial call to start the countdown
     updateCountdown();
-
-
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('.header');
-      const scrollPosition = window.scrollY;
-  
-      if (scrollPosition > 50) { // You can adjust this value to change when the effect starts
-          header.classList.add('transparent');
-      } else {
-          header.classList.remove('transparent');
-      }
-  });
   </script>
 
 </body>

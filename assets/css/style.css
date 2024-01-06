@@ -194,6 +194,18 @@
 
 /*TIMELINE*/
 
+.code-page p{
+  margin-top: 40px;
+  color: #fff;
+}
+
+.code-page{
+  margin-top: 30px;
+  color: #fff;
+  border-bottom: solid #11998e;
+  border-top: solid #11998e;
+}
+
 
 body {
   font-family: "Open Sans", sans-serif;
