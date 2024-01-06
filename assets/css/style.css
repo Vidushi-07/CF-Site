@@ -207,6 +207,13 @@
 }
 
 
+.prize i{
+  color: #ffc451;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
