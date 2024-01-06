@@ -4,7 +4,7 @@
   height: 150px;
   max-width: 880px; /* Set a maximum width to make it responsive */
   position: absolute;
-  top: 5%;
+  bottom: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -15,13 +15,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 0, 0.6);;
+  background: rgba(0, 0, 0, 0.4);;
 }
 
 .timer {
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -63,10 +63,9 @@
   content: 'SECS';
 }
 
-/* Media Queries for responsiveness */
 @media only screen and (max-width: 678px) {
   .timer-container {
-    max-width: 110%; /* Set the maximum width to 100% for smaller screens */
+    max-width: 100%;
   }
 
   #title {
@@ -74,14 +73,14 @@
   }
 
   .timer span {
-    font-size: 48px; /* Adjust font size for smaller screens */
-    width: 55px; /* Adjust width for smaller screens */
-    margin-bottom: 10px; /* Adjust margin for smaller screens */
+    font-size: 48px;
+    width: 55px;
+    margin-bottom: 10px;
   }
 
   .timer span::after {
-    font-size: 12px; /* Adjust font size for smaller screens */
-    bottom: -3px; /* Adjust bottom position for smaller screens */
+    font-size: 12px;
+    bottom: -3px;
   }
 }
 
@@ -107,7 +106,6 @@
   height: auto;
   max-width: 800px;
   margin: 0 auto;
-  margin-top: 20px;
   position: relative;
 }
 
@@ -125,15 +123,15 @@
   margin-bottom: 0;
 }
 .timeline-content h1 {
-  font-weight: 500;
-  font-size: 25px;
+  font-weight: 600;
+  font-size: 24px;
   line-height: 30px;
   margin-bottom: 10px;
+  color: #16a45d;
 }
 .timeline-content p {
   font-size: 16px;
-  line-height: 30px;
-  font-weight: 300;
+  line-height: 25px;
 }
 .timeline-content .date {
   font-size: 12px;
@@ -190,7 +188,7 @@
     top: -30px;
   }
   .timeline ul li:hover::before {
-    background-color: #6eff4d;
+    background: linear-gradient(to right, #11998e, #38ef7d);
   }
 }
 
@@ -667,7 +665,7 @@ h6 {
 
 #code-hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.11);
   position: absolute;
   bottom: 0;
   top: 0;
