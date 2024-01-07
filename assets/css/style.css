@@ -1,3 +1,233 @@
+/*---------Timer---------*/
+
+.timer-container {
+  height: 150px;
+  max-width: 880px; /* Set a maximum width to make it responsive */
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#title {
+  color: white;
+  font-size: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(30px);
+}
+
+.timer span {
+  font-size: 80px;
+  width: 110px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  color: #f8f9fa;
+  margin-bottom: 20px;
+}
+
+.timer span::after {
+  font-size: 16px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#days::after {
+  content: 'DAYS';
+}
+
+#hours::after {
+  content: 'HOURS';
+}
+
+#minutes::after {
+  content: 'MINS';
+}
+
+#seconds::after {
+  content: 'SECS';
+}
+
+@media only screen and (max-width: 678px) {
+  .timer-container {
+    max-width: 100%;
+  }
+
+  #title {
+    font-size: 50px;
+  }
+
+  .rules-list {
+    list-style-position: outside;
+    line-height: 30px;
+  }
+
+  
+  .card {
+    padding: 10px;
+  }
+
+  .timer span {
+    font-size: 48px;
+    width: 55px;
+    margin-bottom: 10px;
+  }
+
+  .timer span::after {
+    font-size: 12px;
+    bottom: -3px;
+  }
+}
+
+#code-body {
+  font-family: "Open Sans", sans-serif;
+  background: #090909;
+}
+
+
+
+/*TIMELINE*/
+
+.timeline-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 10px;
+  color: #16a45d;
+}
+.timeline-content p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 51.9%;
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+  }
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 0px;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+  }
+}
+
+/*TIMELINE*/
+
+.code-page p{
+  margin-top: 40px;
+  color: #fff;
+}
+
+.code-page{
+  margin-top: 30px;
+  color: #fff;
+  border-bottom: solid #11998e;
+}
+
+
+.prize i{
+  color: #ffc451;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.rules{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -140,6 +370,7 @@ h6 {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
+
 }
 
 /*--------------------------------------------------------------
@@ -453,6 +684,30 @@ h6 {
   position: relative;
 }
 
+#code-hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/code.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+#code-hero .container {
+  position: relative;
+  padding-top: 74px;
+  text-align: center;
+}
+
+#code-hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 
 #hero:before {
   content: "";
@@ -710,7 +965,11 @@ section {
   }
 }
 
-
+.card {
+  background-color: #222;
+  color: #fff;
+  padding: 30px;
+}
 
 
 .premium-card {
@@ -920,6 +1179,46 @@ section {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
+}
+
+.code-cta {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/code.jpg") fixed center center;
+  background-size: cover;
+  padding: 60px 0;
+  border-bottom: solid #11998e;
+}
+
+.code-cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-top: 10px;
+  color: #FFF ;
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+}
+
+#info-msg{
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.wall-of-fame-column{
+  color: #000 !important;
+}
+
+
+.code-cta h4 {
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .cta h3, h4 {
@@ -1452,141 +1751,7 @@ section {
   bottom: 15px;
 }
 
-/*--------------------------------------------------------------
-# Contact
---------------------------------------------------------------*/
-.contact .info {
-  width: 100%;
-  background: #fff;
-}
 
-.contact .info i {
-  font-size: 20px;
-  background: #ffc451;
-  color: #151515;
-  float: left;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-}
-
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #151515;
-}
-
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #484848;
-}
-
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
-}
-
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  border-radius: 4px;
-}
-
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: #ffc451;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #ffc451;
-  border: 0;
-  padding: 10px 24px;
-  color: #151515;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #ffcd6b;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Breadcrumbs
