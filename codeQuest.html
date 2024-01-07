@@ -152,7 +152,7 @@
         </div>
         
         <div class = "row d-flex justify-content-center align-items-center">
-          <div class = "col-lg-4 hero-img"  data-aos="zoom-in" data-aos-delay="400">
+          <div class = "col-lg-4 hero-img"  data-aos="zoom-out" data-aos-delay="100">
               <div class="container mt-4">
                 <dotlottie-player src="https://lottie.host/14e2963a-d0d0-4ab4-a51b-257207179e5f/UB8y1UNTWF.json" background="transparent" speed="1" style="width: 430px; height: auto;" loop autoplay></dotlottie-player>
               </div>  
@@ -312,7 +312,7 @@
             </li>
             <li>
               <div class="timeline-content">
-                <h3 class="date">11<sup>th</sup> Jan, 2024 - 17<sup>th</sup> Jan, 2024</h3>
+                <h3 class="date">8<sup>th</sup> Jan, 2024 - 17<sup>th</sup> Jan, 2024</h3>
                 <h1>Team Registration</h1>
                 <p>Ready to accept the challenge? Registration is simple! Every Team must complete an Online Registration &amp; to compete in PEC Code Quest.</p>
               </div>
@@ -370,9 +370,11 @@
         <div class="text-center">
           <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px;">Registration</span>
   
-          <h4>Are you ready to push the boundaries of what you thought possible in the world of coding? <br>Don't miss your chance to compete against the best minds and claim your spot as the coding champion! </h4>
-          <a class="cta-btn" style="margin-right: 5px;" href="/codeQuest.html">Register <i class="bi bi-box-arrow-up-right"></i></a>
-          <a class="cta-btn" style="margin-left: 5px;"  href="/codeQuest.html">Brochure <i class="bi bi-download"></i></a>
+          <h4>Are you ready to push the boundaries of what you thought possible in the world of coding?<br> <br>Don't miss your chance to compete against the best minds and claim your spot as the coding champion! </h4>
+          <a class="cta-btn" style="margin-right: 5px; cursor: pointer;" id = "nil">Register <i class="bi bi-box-arrow-up-right"></i></a>
+          <!--<a class="cta-btn" style="margin-left: 5px;"  href="/codeQuest.html">Brochure <i class="bi bi-download"></i></a>-->
+          
+          <p style = "visibility: hidden;" id = "info-msg"><sub><i class="bi bi-info-circle"></i>&nbsp;Registrations Opening Soon...<sub></p>
         </div>
   
       </div>
@@ -520,6 +522,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.getElementById("nil").addEventListener("click", () => {
+      document.getElementById('info-msg').style.visibility = "visible";
+    })
+  </script>
 
   <script>
     //(format: 'YYYY-MM-DD HH:MM:SS')

@@ -1202,6 +1202,12 @@ section {
   background: linear-gradient(45deg, #11998e, #38ef7d);
 }
 
+#info-msg{
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
 
 .code-cta h4 {
   color: #fff;
