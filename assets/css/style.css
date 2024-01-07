@@ -1208,6 +1208,10 @@ section {
   margin-bottom: 0px;
 }
 
+.wall-of-fame-column{
+  color: #000 !important;
+}
+
 
 .code-cta h4 {
   color: #fff;
