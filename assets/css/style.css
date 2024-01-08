@@ -1189,7 +1189,7 @@ section {
   border-bottom: solid #11998e;
 }
 
-.code-cta .cta-btn {
+.btn-register {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -1197,10 +1197,16 @@ section {
   display: inline-block;
   padding: 8px 28px;
   border-radius: 4px;
-  transition: 0.5s;
-  margin-top: 10px;
+  transition: 1s;
+  margin-top: 20px;
   color: #FFF ;
   background: linear-gradient(45deg, #11998e, #38ef7d);
+}
+
+.btn-register:hover {
+  transition: 1s;
+  background: linear-gradient(45deg, #38ef7d, #11998e);
+  color: #fff;
 }
 
 #info-msg{
