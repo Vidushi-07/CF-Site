@@ -119,11 +119,20 @@
   font-size: 24px;
 }
 
+
+.announcements {
+  font-size: 28px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+
 .disclaimer {
   font-weight: 400;
   font-size: 12px;
   margin-bottom: 0px;
 }
+
 
 
 
