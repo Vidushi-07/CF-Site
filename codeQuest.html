@@ -86,7 +86,11 @@
               <span id="seconds" style="margin-right: 20px;">00</span>
             </div>
 
-            <a href="https://forms.gle/M7TTV425F7T9R7AM9" target="_blank" class="btn-register">Register Now</a>
+            <a id = "nil" style="cursor: not-allowed; margin-right: 5px;" class="btn-register">Register <i class="bi bi-box-arrow-up-right"></i></a>
+            <a class="btn-register" style="margin-left: 5px; cursor: pointer;"  onclick="downloadBrochure()">Catalog <i class="bi bi-download"></i></a>
+
+            
+            <p style = "visibility: hidden;" id = "info-msg"><sub><i class="bi bi-info-circle"></i>&nbsp;Registration is Closed!<sub></p>
           </div>
         </div>
       </div>
@@ -96,8 +100,38 @@
   <main id="code-main">
 
     <section class="code-page">
+      <div class="container justify-content-center" data-aos="fade-up">
+        <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
+          <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px;">Announcements</span>
+        </div>
+        <div class="row justify-content-center" style="margin-top:30px">
+          
+          <div class="col-lg-11">
+
+            <div class="container mt-4">
+              <div class="card">
+                <div class="card-body">
+                  <div style="display: flex; justify-content: center; justify-content: center;">
+                  </div>
+                  <p class="rules">
+                    <ul class"rules-list" style="list-style: none;">
+                      <li style = "margin-bottom: 30px;"><i class="bi bi-megaphone-fill" style="color: #16a45d; font-size: 22px;"></i>&nbsp;&nbsp;&nbsp;Registrations for PEC Code Quest is Closed!  Thank you for your Participation - [17<sup>th</sup> Jan 2024]</li>
+                      <li style = "margin-bottom: 30px;"><i class="bi bi-megaphone-fill" style="color: #16a45d; font-size: 22px;"></i>&nbsp;&nbsp;&nbsp;Practice Problems for Preliminary Round &amp; Semi-Finals are now available in our website! - [13<sup>th</sup> Jan 2024]</li>
+                      <li style = "margin-bottom: 30px;"><i class="bi bi-megaphone-fill" style="color: #16a45d; font-size: 22px;"></i>&nbsp;&nbsp;&nbsp;Registrations for PEC Code Quest is now Open!  Contestants are asked to register their team within the deadline - [9<sup>th</sup> Jan 2024]</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div> 
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="code-page">
       <div class="container" data-aos="fade-up">
-        <div class="row" style= "margin-top: 60px;">
+        <div class="row">
           <div class = "col-lg-12 order-1 order-lg-2">
               <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
                 <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px;">Highlights</span>
@@ -214,6 +248,22 @@
       </div>
   </section>
 
+  <!--
+  <section class="code-page">
+    <div class="container" data-aos="fade-up">
+      <div class="row">
+        <div class = "col-lg-4 order-1 order-lg-2">
+            <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
+              <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px;">Statistics</span>
+              <canvas id="statistics-chart" 
+                width="300" height="500"></canvas>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>-->
+
+
     <section class="code-page">
       <div class="container" data-aos="fade-up">
         <div class="row" style= "margin-top: 60px;">
@@ -242,7 +292,7 @@
 
   <section class="code-page" id="practiceNow">
     <div class="container" data-aos="fade-up">
-      <div class="row d-flex flex-column align-items-center justify-content-center" style= "margin-top: 60px;" >
+      <div class="row d-flex flex-column align-items-center justify-content-center" >
         <div class = "col-lg-12 d-flex flex-column align-items-center justify-content-center order-1 order-lg-2">
             <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
               <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px;">Practice</span>
@@ -307,7 +357,7 @@
 
     <section class="code-page">
       <div class="container" data-aos="fade-up">
-        <div class="row" style= "margin-top: 60px;">
+        <div class="row">
           <div class = "col-lg-6 order-1 order-lg-2 hero-img"  data-aos="zoom-in" data-aos-delay="400" style = "display: flex; align-items: center; justify-content: center;">   
             <dotlottie-player src="https://lottie.host/b68fe3c4-67a3-4a73-8e1a-d28c438d218c/BMM05WnM5B.json" background="transparent" speed="1" style="width: 600px; height: 600px;" loop autoplay></dotlottie-player>
           </div>
@@ -434,7 +484,7 @@
       </div>
     </section>
 
-    <section id="cta" class="code-cta">
+    <!--<section id="cta" class="code-cta">
       <div class="container" data-aos="zoom-in">
   
         <div class="text-center">
@@ -447,11 +497,11 @@
         </div>
   
       </div>
-    </section>
+    </section> -->
 
     <section class="code-page">
       <div class="container" data-aos="fade-up">
-        <div class="row" style= "margin-top: 60px;">
+        <div class="row">
           <div class = "col-lg-12 d-flex flex-column align-items-center justify-content-center order-1 order-lg-2">
               <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
                 <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px;">Rules &amp; Regulations</span>
@@ -585,6 +635,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+  <script src= "https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script> 
+
   <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 
   
@@ -639,6 +693,247 @@
     // Initial call to start the countdown
     updateCountdown();
   </script>
+
+  <script>
+    document.getElementById("nil").addEventListener("click", () => {
+      document.getElementById('info-msg').style.visibility = "visible";
+    })
+  </script>
+
+  <!--<script>
+
+    const data = {
+      labels: ['AIDS', 'AIML', 'CCE', 'CSBS', 'CSE', 'ECE', 'EEE', 'IT', 'MECH'],
+      datasets: [
+        {
+          label: 'Dataset',
+          data: [18, 1, 4, 27, 55, 27, 5, 32, 1],
+          borderColor: 'rgb(255, 99, 132)',
+          backgroundColor: 'rgba(255, 99, 132, 0.5)',
+          pointStyle: 'circle',
+          pointRadius: 10,
+          pointHoverRadius: 15
+        }
+      ]
+    };
+
+    
+    const config = {
+      type: 'line',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          title: {
+            display: true,
+            text: (ctx) => 'Point Style: ' + ctx.chart.data.datasets[0].pointStyle,
+          }
+        }
+      }
+    };
+
+    const actions = [
+  {
+    name: 'pointStyle: circle (default)',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = 'circle';
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'pointStyle: cross',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = 'cross';
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'pointStyle: crossRot',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = 'crossRot';
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'pointStyle: dash',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = 'dash';
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'pointStyle: line',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = 'line';
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'pointStyle: rect',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = 'rect';
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'pointStyle: rectRounded',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = 'rectRounded';
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'pointStyle: rectRot',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = 'rectRot';
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'pointStyle: star',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = 'star';
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'pointStyle: triangle',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = 'triangle';
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'pointStyle: false',
+    handler: (chart) => {
+      chart.data.datasets.forEach(dataset => {
+        dataset.pointStyle = false;
+      });
+      chart.update();
+    }
+  }
+  ];
+
+  const ctx = document.getElementById('statistics-chart').getContext('2d');
+  new Chart(ctx, config);
+  </script>
+
+  <script>
+
+    const DATA_COUNT = 9;
+    const NUMBER_CFG = {count: DATA_COUNT, min: 0, max: 100};
+
+    const data = {
+      labels: ['AIDS', 'AIML', 'CCE', 'CSBS', 'CSE', 'ECE', 'EEE', 'IT', 'MECH'],
+      datasets: [
+        {
+          label: 'Registration Stats',
+          data: [18, 1, 4, 27, 55, 27, 5, 32, 1],
+          backgroundColor: [
+            '#60BBD0',
+            '#A4A4A4',
+            '#1D3F6E',
+            '#FFAD33',
+            '#FF9900',
+            'maroon',
+            'green',
+            'red',
+            'purple',
+            'violet',
+          ],
+          hoverOffset: 4
+      
+        }
+      ]
+    };
+
+    
+    const config = {
+      type: 'doughnut',
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'left',
+          },
+          title: {
+            display: true,
+            text: 'Department wise Registration Statistics'
+          }
+        }
+      },
+    };
+
+    const actions = [
+  {
+    name: 'Randomize',
+    handler(chart) {
+      chart.data.datasets.forEach(dataset => {
+        dataset.data = Utils.numbers({count: chart.data.labels.length, min: 0, max: 100});
+      });
+      chart.update();
+    }
+  },
+  {
+    name: 'Add Data',
+    handler(chart) {
+      const data = chart.data;
+      if (data.datasets.length > 0) {
+        data.labels.push('data #' + (data.labels.length + 1));
+
+        for (let index = 0; index < data.datasets.length; ++index) {
+          data.datasets[index].data.push(Utils.rand(0, 100));
+        }
+
+        chart.update();
+      }
+    }
+  },
+  {
+    name: 'Remove Dataset',
+    handler(chart) {
+      chart.data.datasets.pop();
+      chart.update();
+    }
+  },
+  {
+    name: 'Remove Data',
+    handler(chart) {
+      chart.data.labels.splice(-1, 1); // remove the label first
+
+      chart.data.datasets.forEach(dataset => {
+        dataset.data.pop();
+      });
+
+      chart.update();
+    }
+  }
+];
+
+  const ctx = document.getElementById('statistics-chart').getContext('2d');
+  new Chart(ctx, config);
+  </script>-->
 
 </body>
 
