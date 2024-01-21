@@ -238,6 +238,42 @@
   }
 }
 
+.btn-download{
+  align-items: center;
+  color: #38ef7d;
+}
+
+/*TABLE*/
+
+
+table {
+  min-width:1200px ;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+tr:hover {
+  cursor: pointer;
+  background-color: #1e1c1c;
+}
+
+
+th,
+td {
+  border: 1px solid #11998e;
+  padding: 8px;
+  text-align: center;
+  color: #fff;
+}
+
+th {
+  background-color: #333;
+}
+
+
+
 /*TIMELINE*/
 
 .code-page p{
@@ -1225,7 +1261,7 @@ section {
   border-bottom: solid #11998e;
 }
 
-.btn-register {
+.btn-register, .btn-download {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 18px;
@@ -1239,7 +1275,7 @@ section {
   background: linear-gradient(45deg, #11998e, #38ef7d);
 }
 
-.btn-register:hover {
+.btn-register:hover, .btn-download:hover  {
   transition: 1s;
   background: linear-gradient(45deg, #38ef7d, #11998e);
   color: #fff;
