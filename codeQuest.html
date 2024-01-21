@@ -86,7 +86,7 @@
               <span id="seconds" style="margin-right: 20px;">00</span>
             </div>
 
-            <a id = "nil" style="cursor: not-allowed; margin-right: 5px;" class="btn-register">Register <i class="bi bi-box-arrow-up-right"></i></a>
+            <a href="/codeQuestResults.html" target="_blank" style="margin-right: 5px;" class="btn-register">View Results <i class="bi bi-box-arrow-up-right"></i></a>
             <a class="btn-register" style="margin-left: 5px; cursor: pointer;"  onclick="downloadBrochure()">Catalog <i class="bi bi-download"></i></a>
 
             
@@ -115,6 +115,8 @@
                   </div>
                   <p class="rules">
                     <ul class"rules-list" style="list-style: none;">
+                      <li style = "margin-bottom: 30px;"><i class="bi bi-megaphone-fill" style="color: #16a45d; font-size: 22px;"></i>&nbsp;&nbsp;&nbsp;PEC Code Quest, Preliminary Round results are Out!&nbsp;&nbsp;To view Results, click 
+                        <a class="practice" href="/codeQuestResults.html" target="_blank">here</a> - [21<sup>st</sup> Jan 2024]</li>
                       <li style = "margin-bottom: 30px;"><i class="bi bi-megaphone-fill" style="color: #16a45d; font-size: 22px;"></i>&nbsp;&nbsp;&nbsp;Registrations for PEC Code Quest is Closed!  Thank you for your Participation - [17<sup>th</sup> Jan 2024]</li>
                       <li style = "margin-bottom: 30px;"><i class="bi bi-megaphone-fill" style="color: #16a45d; font-size: 22px;"></i>&nbsp;&nbsp;&nbsp;Practice Problems for Preliminary Round &amp; Semi-Finals are now available in our website! - [13<sup>th</sup> Jan 2024]</li>
                       <li style = "margin-bottom: 30px;"><i class="bi bi-megaphone-fill" style="color: #16a45d; font-size: 22px;"></i>&nbsp;&nbsp;&nbsp;Registrations for PEC Code Quest is now Open!  Contestants are asked to register their team within the deadline - [9<sup>th</sup> Jan 2024]</li>
@@ -685,8 +687,10 @@
         setTimeout(updateCountdown, 1000); // Update the countdown every second
       } 
       else {
-        const countdownTimer = document.getElementById('countdown-timer');
-        countdownTimer.textContent = "Countdown has ended!";
+        daysBox.innerText = `00`;
+        hoursBox.innerText = `00`;
+        minsBox.innerText = `00`;
+        secsBox.innerText = `00`;
       }
     }
 
