@@ -245,6 +245,20 @@
 
 /*TABLE*/
 
+td:first-child {
+  width: 150px; 
+}
+td:nth-child(2) {
+  width: 200px; 
+}
+
+td:nth-child(4) {
+  width: 300px; 
+}
+
+td:nth-child(8) {
+  width: 150px; 
+}
 
 table {
   min-width:1200px ;
