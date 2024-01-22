@@ -86,7 +86,7 @@
     <section class="code-page" style="padding: 30px; overflow-x: auto;">
       <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
         
-        <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px;">shortlisted teams For Semi-Finals</span>
+        <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px;">shortlisted teams For Finals</span>
         <a class="btn-download" style="margin-bottom: 30px; cursor: pointer;"  onclick="downloadResult()">Download PDF <i class="bi bi-download"></i></a>
 
       </div>
@@ -245,10 +245,10 @@
 
   <script>
     function downloadResult() {
-      var brochurePath = 'assets/results/PEC CODE QUEST - SEMI-FINALIST.pdf';
+      var brochurePath = 'assets/results/PEC CODE QUEST - FINALIST.pdf';
       var link = document.createElement('a');
       link.href = brochurePath;
-      link.download = 'PEC CODE QUEST - SEMI-FINALIST.pdf';
+      link.download = 'PEC CODE QUEST - FINALIST.pdf';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -258,7 +258,7 @@
   <script>
     async function fetchTeamData() {
       try {
-          const response = await fetch('assets/results/results.json');
+          const response = await fetch('assets/results/finals.json');
           const data = await response.json();
   
           const tableBody = document.querySelector('#teamTable tbody');
