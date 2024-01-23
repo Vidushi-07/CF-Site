@@ -86,11 +86,8 @@
               <span id="seconds" style="margin-right: 20px;">00</span>
             </div>
 
-            <a href="/codeQuestFinals.html" target="_blank" style="margin-right: 5px;" class="btn-register">Round 2 Results <i class="bi bi-box-arrow-up-right"></i></a>
             <a class="btn-register" style="margin-left: 5px; cursor: pointer;"  onclick="downloadBrochure()">Catalog <i class="bi bi-download"></i></a>
 
-            
-            <p style = "visibility: hidden;" id = "info-msg"><sub><i class="bi bi-info-circle"></i>&nbsp;Registration is Closed!<sub></p>
           </div>
         </div>
       </div>
@@ -266,6 +263,31 @@
       </div>
     </div>
 </section>-->
+
+<section class="code-page" style="padding: 30px; overflow-x: auto;">
+  <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
+    
+    <span style="font-family: 'Bungee Spice', sans-serif; font-size: 40px;">top 5 teams</span>
+    <a class="btn-download" style="margin-bottom: 30px; cursor: pointer;"  onclick="downloadResult()">Download PDF <i class="bi bi-download"></i></a>
+
+  </div>
+  
+    <table id="teamTable" class="datatable">
+      <thead>
+        <tr>
+          <th style="text-align: center;">RANK</th>
+          <th style="text-align: center;">TEAM NAME</th>
+          <th style="text-align: center;">NAME</th>
+          <th style="text-align: center;">ROLL NUMBER</th>
+          <th style="text-align: center;">DEPARTMENT</th>
+          <th style="text-align: center;">YEAR OF STUDY</th>
+          <th style="text-align: center;">SECTION</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+</section>
 
 
     <section class="code-page">
@@ -993,6 +1015,64 @@
   const ctx = document.getElementById('statistics-chart').getContext('2d');
   new Chart(ctx, config);
   </script>-->
+
+  <script>
+    async function fetchTeamData() {
+      try {
+          const response = await fetch('assets/results/winners.json');
+          const data = await response.json();
+  
+          const tableBody = document.querySelector('#teamTable tbody');
+  
+          data.forEach((team, rowIndex) => {
+              const row = document.createElement('tr');
+  
+              Object.entries(team).forEach(([key, value]) => {
+                  const cell = document.createElement('td');
+                  cell.textContent = value;
+  
+                  if (rowIndex < data.length - 1 && !data[rowIndex + 1][key]) {
+                      const rowspan = getRowspan(rowIndex + 1, key, data);
+                      if (rowspan > 1) {
+                          cell.rowSpan = rowspan;
+                      }
+                  }
+  
+                  row.appendChild(cell);
+              });
+  
+              tableBody.appendChild(row);
+          });
+      } catch (error) {
+          console.error('Error fetching or parsing JSON:', error);
+      }
+  }
+  
+  function getRowspan(startIndex, key, data) {
+      let rowspan = 1;
+      for (let i = startIndex; i < data.length; i++) {
+          if (data[i][key]) {
+              break;
+          }
+          rowspan++;
+      }
+      return rowspan;
+  }
+  
+  fetchTeamData();
+  </script>
+
+  <script>
+    function downloadResult() {
+      var brochurePath = 'assets/results/CF - PEC CODE QUEST - WINNERS.pdf';
+      var link = document.createElement('a');
+      link.href = brochurePath;
+      link.download = 'CF - PEC CODE QUEST - WINNERS.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
 
 </body>
 

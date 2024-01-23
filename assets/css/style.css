@@ -261,6 +261,9 @@ td:nth-child(2) {
 td:nth-child(4) {
   width: 300px; 
 }
+td:nth-child(3) {
+  width: 300px; 
+}
 
 td:nth-child(8) {
   width: 150px; 
@@ -899,7 +902,7 @@ h6 {
   }
 
   #hero #index-hero {
-    font-size: 112px;
+    font-size: 98px;
     line-height: 54px;
   }
 }
@@ -1024,7 +1027,7 @@ section {
 @media (max-width: 991px) {
   .section-title h2::after, h2::before{
     content: "";
-    width: 80px;
+    width: 50px;
     height: 2px;
     display: inline-block;
     background: #ffde9e;
@@ -1033,7 +1036,7 @@ section {
 
   .section-title-wf h2::after, h2::before {
     content: "";
-    width: 60px;
+    width: 40px;
     height: 3px;
     display: inline-block;
     background: gold;
