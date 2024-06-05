@@ -2092,6 +2092,8 @@ section {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+
 .team-card img {
   border-radius: 50%;
   width: 130px;
@@ -2099,9 +2101,12 @@ section {
   object-fit: cover;
 }
 
+
 .team-card h4 {
   color: #1e1c1c;
+  font-size: 24px;
 }
+
 
 @media screen and (max-width: 768px) {
   .team-card {
