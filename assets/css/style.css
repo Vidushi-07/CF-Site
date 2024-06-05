@@ -2083,3 +2083,34 @@ section {
   background: #fff;
   transition: ease-in-out 0.3s;
 }
+
+
+.team-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.team-card img {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+}
+
+
+.team-card h4 {
+  color: #1e1c1c;
+  font-size: 24px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .team-card {
+    margin-top: 15px;
+  }
+
+}
