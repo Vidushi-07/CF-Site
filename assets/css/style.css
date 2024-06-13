@@ -1326,6 +1326,32 @@ section {
   color: #fff;
 }
 
+
+
+.btn-register1, .btn-download1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  transition: 1s;
+  margin-top: 20px;
+  color: #FFF ;
+  background: linear-gradient(45deg, #f8f413, #cba620);
+}
+
+.btn-register1:hover, .btn-download1:hover  {
+  transition: 1s;
+  background: linear-gradient(45deg,#cba620,#f8f413);
+  color: #fff;
+}
+
+
+
+
+
 #info-msg{
   color: #fff;
   margin-top: 5px;
