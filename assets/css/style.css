@@ -2157,7 +2157,6 @@ section {
   width:100%;
 }
 .code-blitz-rules{
-    display: flex;
     text-align: center;
     text-align: left;
     justify-content: center;
@@ -2168,8 +2167,8 @@ section {
   border-width: 0px;
   position: relative;
   top:20px;
-  width: 500px;
-  height:250px;
+  width: 600px;
+  height:300px;
 }
 
 
