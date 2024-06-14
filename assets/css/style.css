@@ -2248,6 +2248,8 @@ section {
     transform: translateX(30px);
     border-radius: 0px 20px 20px 20px;
   }
+
+
   .codeblitz-timeline ul li::before {
     content: "";
     position: absolute;
@@ -2298,4 +2300,59 @@ section {
   margin-top: 30px;
   color: #fff;
   border-bottom: solid 1px #fe9e4a;
+}
+
+.image-row {
+  font-family: Poppins;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+
+  border-radius: 10px;
+  
+}
+
+.image-container {
+  position: relative;
+  flex: 1;
+  margin: 0 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  transition: filter 0.3s ease;
+}
+
+.image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.image-container:hover img {
+  filter: blur(4px);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
 }
