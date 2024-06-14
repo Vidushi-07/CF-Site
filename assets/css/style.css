@@ -2146,14 +2146,13 @@ section {
 }
 .code-blitz-card-1{
     background-color: #222;
-    color: #fff;
     padding: 10px;
 }
 .code-blitz-card-2{
   background-color: aliceblue;
   border-radius: 15px 15px 15px 15px;
   padding:10px;
-  height:30vh;
+  height:auto;
   width:100%;
 }
 .code-blitz-rules{
@@ -2167,10 +2166,15 @@ section {
   border-width: 0px;
   position: relative;
   top:20px;
+  left:20px;
   width: 600px;
-  height:300px;
+  height:350px;
 }
 
+
+.code-blitz-container{
+  column-count: 2;
+  margin-top: 25px;
 
 /*CodeBlitz TIMELINE*/
 
