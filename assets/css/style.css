@@ -2175,7 +2175,7 @@ section {
 .code-blitz-container{
   column-count: 2;
   margin-top: 25px;
-
+}
 /*CodeBlitz TIMELINE*/
 
 .codeblitz-timeline-container {
@@ -2369,11 +2369,27 @@ section {
 }
 
 .blitz-list {
-  list-style-type: none; /* Remove default list styling */
+  list-style-type: square; 
 }
 
-.blitz-list li {
-  padding-left: 30px; /* Space for the image */
-  background: url('/assets/img/information.png') no-repeat left center;
-  background-size: 16px 16px; /* Adjust size of the image */
+@media screen and (max-width: 768px) {
+  
+  .blitz-about-card {
+    padding: 0 !important;
+    font-size: 14px; 
+  }
+
+  .blitz-practice-card {
+    padding: 0 !important;
+    font-size: 14px; 
+  }
+
+  .blitz-cta {
+    font-size: 15px;
+  }
+
+  .image-row {
+    display: none;
+}
+
 }
