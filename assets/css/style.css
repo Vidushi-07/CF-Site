@@ -2307,12 +2307,13 @@ section {
 }
 
 .image-row {
+
   font-family: Poppins;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  max-width: 1200px;
+  width: 100%;
+
   margin: auto;
   padding: 20px;
 
@@ -2359,4 +2360,20 @@ section {
 
 .image-container:hover .overlay {
   opacity: 1;
+}
+
+.title-h3{
+
+  color: #ff7700;
+  font-family: "Raleway", sans-serif;
+}
+
+.blitz-list {
+  list-style-type: none; /* Remove default list styling */
+}
+
+.blitz-list li {
+  padding-left: 30px; /* Space for the image */
+  background: url('/assets/img/information.png') no-repeat left center;
+  background-size: 16px 16px; /* Adjust size of the image */
 }
