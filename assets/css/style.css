@@ -2165,17 +2165,30 @@ section {
 .code-blitz-yt-video{
   border-width: 0px;
   position: relative;
-  top:20px;
+  top:50px;
   left:20px;
   width: 600px;
   height:350px;
 }
-
-
 .code-blitz-container{
   column-count: 2;
   margin-top: 25px;
 }
+.code-blitz-btn{
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  border-width:0px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  color: aliceblue;
+  background: linear-gradient(45deg, #ff7700, #a24600);
+  height: 50px;
+  width:150px;
+}
+
 /*CodeBlitz TIMELINE*/
 
 .codeblitz-timeline-container {
@@ -2284,10 +2297,11 @@ section {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   display: inline-block;
   padding: 8px 28px;
-  border-radius: 4px;
+  border-radius: 10px;
+  border-width: 0px;
   transition: 1s;
   margin-top: 20px;
   color: #FFF ;
@@ -2316,7 +2330,6 @@ section {
 
   margin: auto;
   padding: 20px;
-
   border-radius: 10px;
   
 }
