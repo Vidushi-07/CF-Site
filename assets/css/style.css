@@ -2174,7 +2174,6 @@ section {
   column-count: 2;
   margin-top: 25px;
 }
-
 .code-blitz-btn{
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -2189,7 +2188,6 @@ section {
   height: 50px;
   width:150px;
 }
-
 
 /*CodeBlitz TIMELINE*/
 
@@ -2323,12 +2321,13 @@ section {
 }
 
 .image-row {
+
   font-family: Poppins;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  max-width: 1200px;
+  width: 100%;
+
   margin: auto;
   padding: 20px;
   border-radius: 10px;
@@ -2374,4 +2373,36 @@ section {
 
 .image-container:hover .overlay {
   opacity: 1;
+}
+
+.title-h3{
+
+  color: #ff7700;
+  font-family: "Raleway", sans-serif;
+}
+
+.blitz-list {
+  list-style-type: square; 
+}
+
+@media screen and (max-width: 768px) {
+  
+  .blitz-about-card {
+    padding: 0 !important;
+    font-size: 14px; 
+  }
+
+  .blitz-practice-card {
+    padding: 0 !important;
+    font-size: 14px; 
+  }
+
+  .blitz-cta {
+    font-size: 15px;
+  }
+
+  .image-row {
+    display: none;
+}
+
 }
