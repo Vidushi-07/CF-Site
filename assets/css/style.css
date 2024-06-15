@@ -2387,4 +2387,9 @@ section {
   .blitz-cta {
     font-size: 15px;
   }
+
+  .image-row {
+    display: none;
+}
+
 }
