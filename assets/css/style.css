@@ -2148,27 +2148,16 @@ section {
     background-color: #222;
     padding: 10px;
 }
-.code-blitz-card-2{
-  background-color: aliceblue;
-  border-radius: 15px 15px 15px 15px;
-  padding:10px;
-  height:auto;
-  width:100%;
-}
+
 .code-blitz-rules{
     text-align: center;
     text-align: left;
     justify-content: center;
-    position: relative;
-    bottom: 20px;
+    margin-top: 10px;
 }
 .code-blitz-yt-video{
-  border-width: 0px;
-  position: relative;
-  top:50px;
-  left:20px;
-  width: 600px;
-  height:350px;
+  width: 700px;
+  height:450px;
 }
 .code-blitz-container{
   column-count: 2;
@@ -2403,6 +2392,11 @@ section {
 
   .image-row {
     display: none;
+}
+
+.code-blitz-yt-video{
+  width: 300px;
+  height:200px;
 }
 
 }
