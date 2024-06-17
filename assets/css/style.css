@@ -2400,3 +2400,24 @@ section {
 }
 
 }
+
+.btn-register2, .btn-download2{
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 10px;
+  border-width: 0px;
+  transition: 1s;
+  margin-top: 20px;
+  color: #FFF ;
+  background: linear-gradient(45deg, #eab011, #f8e252);
+}
+
+.btn-register2:hover, .btn-download2:hover  {
+  transition: 1s;
+  background: linear-gradient(45deg, #f8e252, #eab011);
+  color: #fff;
+}
