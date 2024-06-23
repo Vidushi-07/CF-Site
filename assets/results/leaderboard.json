@@ -13,7 +13,7 @@
         "NAME": "Aswin A S",
         "ROLL No.": "-",
         "DEPT": "CSBS",
-        "YEAR": "III"
+        "YEAR": "IV"
     },
     {
         "RANK": "1",
@@ -186,14 +186,6 @@
     {
         "RANK": "3",
         "SCORE": "750.00",
-        "NAME": "Varalakshmi k C",
-        "ROLL No.": "-",
-        "DEPT": "CSBS",
-        "YEAR": "III"
-    },
-    {
-        "RANK": "3",
-        "SCORE": "750.00",
         "NAME": "Michael Josil M",
         "ROLL No.": "2021PECCS323",
         "DEPT": "CSE",
@@ -237,22 +229,6 @@
         "NAME": "Monisha V",
         "ROLL No.": "2022PECCS222",
         "DEPT": "CSE",
-        "YEAR": "III"
-    },
-    {
-        "RANK": "5",
-        "SCORE": "0.00",
-        "NAME": "Harsha Vardhan T",
-        "ROLL No.": "2023PECML333",
-        "DEPT": "AIML",
-        "YEAR": "II"
-    },
-    {
-        "RANK": "5",
-        "SCORE": "0.00",
-        "NAME": "Senthil Kumaran",
-        "ROLL No.": "2022PECAI348",
-        "DEPT": "AIDS",
         "YEAR": "III"
     }
 
