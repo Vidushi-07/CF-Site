@@ -1,0 +1,259 @@
+[
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Jenita C",
+        "ROLL No.": "-",
+        "DEPT": "-",
+        "YEAR": "-"
+    },
+    { 
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Aswin A S",
+        "ROLL No.": "-",
+        "DEPT": "CSBS",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Roffin Jason",
+        "ROLL No.": "-",
+        "DEPT": "CSBS",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Sridharan S",
+        "ROLL No.": "-",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Steve Emmanuel J",
+        "ROLL No.": "-",
+        "DEPT": "CSBS",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Gurumurthy I",
+        "ROLL No.": "-",
+        "DEPT": "CSBS",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Mohamed Jasim M",
+        "ROLL No.": "2022PECCS498",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Swathi V",
+        "ROLL No.": "2021PECCS209",
+        "DEPT": "CSE",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Johith Raj S S",
+        "ROLL No.": "2022PECCS578",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Shruti S",
+        "ROLL No.": "2022PECCS294",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Sudarson Bharathwaaj",
+        "ROLL No.": "2022PECCS373",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Sakkthivel Theyagarajan",
+        "ROLL No.": "2021PECCB223",
+        "DEPT": "CSBS",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Jeswin Rhymond",
+        "ROLL No.": "2021PECCS296",
+        "DEPT": "CSE",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Rajavel M",
+        "ROLL No.": "-",
+        "DEPT": "ECE",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Madhavakumar D",
+        "ROLL No.": "2021PECCS312",
+        "DEPT": "CSE",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Akshaya M",
+        "ROLL No.": "-",
+        "DEPT": "CSBS",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Jeswin Joseph J",
+        "ROLL No.": "2021PECCS295",
+        "DEPT": "CSE",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Rishab H",
+        "ROLL No.": "2021PECCS347",
+        "DEPT": "CSE",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "1000.00",
+        "NAME": "Karthick Vasudevan",
+        "ROLL No.": "2021PECCS349",
+        "DEPT": "CSE",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "2",
+        "SCORE": "875.00",
+        "NAME": "Suganthan K",
+        "ROLL No.": "-",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "2",
+        "SCORE": "875.00",
+        "NAME": "Gowshik G S",
+        "ROLL No.": "-",
+        "DEPT": "CSBS",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "2",
+        "SCORE": "875.00",
+        "NAME": "Mohamed Athil",
+        "ROLL No.": "2022PECIT380",
+        "DEPT": "IT",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "2",
+        "SCORE": "875.00",
+        "NAME": "Nikhitha K V",
+        "ROLL No.": "2022PECCS227",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "3",
+        "SCORE": "750.00",
+        "NAME": "Varalakshmi k C",
+        "ROLL No.": "-",
+        "DEPT": "CSBS",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "3",
+        "SCORE": "750.00",
+        "NAME": "Michael Josil M",
+        "ROLL No.": "2021PECCS323",
+        "DEPT": "CSE",
+        "YEAR": "IV"
+    },
+    {
+        "RANK": "4",
+        "SCORE": "500.00",
+        "NAME": "Monish B",
+        "ROLL No.": "2022PECCS504",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "4",
+        "SCORE": "500.00",
+        "NAME": "Naveen Kumar",
+        "ROLL No.": "2022PECCS518",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "4",
+        "SCORE": "500.00",
+        "NAME": "Varshini S",
+        "ROLL No.": "2022PECCS329",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "4",
+        "SCORE": "500.00",
+        "NAME": "Mohammed Aashif H",
+        "ROLL No.": "2022PECCS500",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "4",
+        "SCORE": "500.00",
+        "NAME": "Monisha V",
+        "ROLL No.": "2022PECCS222",
+        "DEPT": "CSE",
+        "YEAR": "III"
+    },
+    {
+        "RANK": "5",
+        "SCORE": "0.00",
+        "NAME": "Harsha Vardhan T",
+        "ROLL No.": "2023PECML333",
+        "DEPT": "AIML",
+        "YEAR": "II"
+    },
+    {
+        "RANK": "5",
+        "SCORE": "0.00",
+        "NAME": "Senthil Kumaran",
+        "ROLL No.": "2022PECAI348",
+        "DEPT": "AIDS",
+        "YEAR": "III"
+    }
+
+]
