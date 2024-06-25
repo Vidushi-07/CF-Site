@@ -2437,3 +2437,15 @@ section {
   }
   
 }
+
+.code-blitz-chart-container{
+  height:400px; 
+  width:600px; 
+  border-radius: 15px;
+}
+@media only screen and (max-width:678px) {
+  .code-blitz-chart-container{
+    width:100%;
+    align-items: center;
+  }
+}
