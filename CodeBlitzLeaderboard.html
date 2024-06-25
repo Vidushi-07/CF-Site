@@ -246,49 +246,51 @@
 
   <script>
     async function fetchTeamData() {
-      try {
-          const response = await fetch('assets/results/leaderboard.json');
-          const data = await response.json();
-  
-          const tableBody = document.querySelector('#teamTable tbody');
-  
-          data.forEach((team, rowIndex) => {
-              const row = document.createElement('tr');
-  
-              Object.entries(team).forEach(([key, value]) => {
-                  const cell = document.createElement('td');
-                  cell.textContent = value;
-  
-                  if (rowIndex < data.length - 1 && !data[rowIndex + 1][key]) {
-                      const rowspan = getRowspan(rowIndex + 1, key, data);
-                      if (rowspan > 1) {
-                          cell.rowSpan = rowspan;
-                      }
-                  }
-  
-                  row.appendChild(cell);
-              });
-  
-              tableBody.appendChild(row);
-          });
-      } catch (error) {
-          console.error('Error fetching or parsing JSON:', error);
-      }
-  }
-  
-  function getRowspan(startIndex, key, data) {
-      let rowspan = 1;
-      for (let i = startIndex; i < data.length; i++) {
-          if (data[i][key]) {
-              break;
-          }
-          rowspan++;
-      }
-      return rowspan;
-  }
-  
-  fetchTeamData();
-  </script>
+        try {
+            const response = await fetch('assets/results/leaderboard.json');
+            const data = await response.json();
+
+            const tableBody = document.querySelector('#teamTable tbody');
+
+            data.forEach((team, rowIndex) => {
+                const row = document.createElement('tr');
+
+                Object.entries(team).forEach(([key, value]) => {
+                    const cell = document.createElement('td');
+                    cell.textContent = value;
+
+                    // Only apply rowspan for non-zero scores
+                    if (value !== 0 && key === "score" && rowIndex < data.length - 1) {
+                        const rowspan = getRowspan(rowIndex + 1, key, data);
+                        if (rowspan > 1) {
+                            cell.rowSpan = rowspan;
+                        }
+                    }
+
+                    row.appendChild(cell);
+                });
+
+                tableBody.appendChild(row);
+            });
+        } catch (error) {
+            console.error('Error fetching or parsing JSON:', error);
+        }
+    }
+
+    function getRowspan(startIndex, key, data) {
+        let rowspan = 1;
+        for (let i = startIndex; i < data.length; i++) {
+            // Only break if the value is non-zero
+            if (data[i][key] && data[i][key] !== 0) {
+                break;
+            }
+            rowspan++;
+        }
+        return rowspan;
+    }
+
+    fetchTeamData();
+</script>
 
 
 </body>
