@@ -42,6 +42,14 @@
     {
         "RANK": 1,
         "SCORE": 1000,
+        "NAME": "Jenita c",
+        "ROLL No.": "2022PECML104",
+        "DEPT": "AIML",
+        "YEAR": "III"
+    },
+    {
+        "RANK": 1,
+        "SCORE": 1000,
         "NAME": "Jeswin joseph j",
         "ROLL No.": "2021PECCS295",
         "DEPT": "CSE",
@@ -179,7 +187,7 @@
         "RANK": 1,
         "SCORE": 1000,
         "NAME": "Hari nandha kumar c",
-        "ROLL No.": "2022PECCB",
+        "ROLL No.": "2022PECCB321",
         "DEPT": "CSBS",
         "YEAR": "III"
     },
