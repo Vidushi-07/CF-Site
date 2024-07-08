@@ -674,15 +674,7 @@
         "YEAR": "III",
         "DEPARTMENT": "CSE"
     },
-    {
-        "RANK": 76,
-        "NAME": "Sundar karthik",
-        "SCORE": 125.0,
-        "TIME": "2:14:14",
-        "ROLLNUMBER": "Lifelong Learner!",
-        "YEAR": "II",
-        "DEPARTMENT": "G "
-    },
+
     {
         "RANK": 76,
         "NAME": "Arun kumar c",
@@ -852,7 +844,7 @@
         "TIME": "0:00:00",
         "ROLLNUMBER": "2021PECEE155",
         "YEAR": "IV",
-        "DEPARTMENT": "EE"
+        "DEPARTMENT": "EEE"
     },
     {
         "RANK": 92,
