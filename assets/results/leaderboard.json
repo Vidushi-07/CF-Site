@@ -6,7 +6,7 @@
         "TIME": "27:16:34",
         "ROLLNUMBER": "2022PECML104",
         "YEAR": "III",
-        "DEPARTMENT": "AI&ML"
+        "DEPARTMENT": "AIML"
     },
     {
         "RANK": 1,
@@ -61,42 +61,6 @@
         "ROLLNUMBER": "2021PECCB222",
         "YEAR": "IV",
         "DEPARTMENT": "CSBS"
-    },
-    {
-        "RANK": 1,
-        "NAME": "Sanjay s",
-        "SCORE": 1000.0,
-        "TIME": "153:25:02",
-        "ROLLNUMBER": "2023PECML282",
-        "YEAR": "II",
-        "DEPARTMENT": "AI&ML"
-    },
-    {
-        "RANK": 1,
-        "NAME": "Jerrish n",
-        "SCORE": 1000.0,
-        "TIME": "223:25:48",
-        "ROLLNUMBER": "2021PECCS294",
-        "YEAR": "IV",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 1,
-        "NAME": "Sudarson bharathwaaj",
-        "SCORE": 1000.0,
-        "TIME": "228:13:54",
-        "ROLLNUMBER": "2022PECCS373",
-        "YEAR": "III",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 1,
-        "NAME": "Prasanna a",
-        "SCORE": 1000.0,
-        "TIME": "228:28:03",
-        "ROLLNUMBER": "2021PECCS339",
-        "YEAR": "IV",
-        "DEPARTMENT": "CSE"
     },
     {
         "RANK": 1,
@@ -402,16 +366,12 @@
         "TIME": "92:18:19",
         "ROLLNUMBER": "2023PECML333",
         "YEAR": "II",
-        "DEPARTMENT": "AI&ML"
+        "DEPARTMENT": "AIML"
     },
     {
         "RANK": 40,
         "NAME": "Dhinesh k",
         "SCORE": 500.0,
-        "TIME": "22:59:32",
-        "ROLLNUMBER": "2022PECML132",
-        "YEAR": "III",
-        "DEPARTMENT": "AI&ML"
         "TIME": "318:29:59",
         "ROLLNUMBER": "2021PECCC138",
         "YEAR": "IV",
@@ -463,23 +423,13 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 36,
-        "NAME": "Janani",
-        "SCORE": 500.0,
-        "TIME": "50:44:33",
-        "ROLLNUMBER": "2023PECML121",
-        "YEAR": "II",
-        "DEPARTMENT": "AI&ML"
-    },
-    {
-        "RANK": 36,
         "RANK": 44,
         "NAME": "Vaishnavi babu",
         "SCORE": 333.33,
         "TIME": "51:30:13",
         "ROLLNUMBER": "2023PECML181",
         "YEAR": "II",
-        "DEPARTMENT": "AI&ML"
+        "DEPARTMENT": "AIML"
     },
     {
         "RANK": 44,
@@ -659,7 +609,7 @@
         "TIME": "49:51:14",
         "ROLLNUMBER": "2023PECCS288",
         "YEAR": "II",
-        "DEPARTMENT": "AI&ML"
+        "DEPARTMENT": "CSE"
     },
     {
         "RANK": 68,
@@ -710,10 +660,6 @@
         "RANK": 70,
         "NAME": "Yamini R",
         "SCORE": 0.0,
-        "TIME": "00:00",
-        "ROLLNUMBER": "2023PECML126",
-        "YEAR": "II",
-        "DEPARTMENT": "AI&ML"
         "TIME": "0:00:00",
         "ROLLNUMBER": "2022PECCS334",
         "YEAR": "III",
