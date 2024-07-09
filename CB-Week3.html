@@ -105,7 +105,7 @@
       <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="150">
         <div class="col-xl-8 col-lg-8">
           <div class="timer-container">
-            <span id="title" style="font-family: 'Nabla', sans-serif; font-size: 60px;"><br>SUMMER <br> CODE BLITZ</span>
+            <span id="title" style="font-family: 'Nabla', sans-serif; font-size: 60px;"><br>WEEK-1  WINNERS</span>
                 <!-- <a class="btn-register2" href="/CodeBlitzInstruction.html" target="_blank" style="margin-top: 20px;">Attend The Contest <i class="bi bi-arrow-right"></i></a> -->
              
           </div>
@@ -119,9 +119,7 @@
 
     <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
         
-      <span style="font-family: 'Nabla', sans-serif; font-size: 60px; margin-bottom: 50px;">Table Toppers</span>
-      <!-- <a class="btn-download" style="margin-bottom: 30px; cursor: pointer;"  onclick="downloadResult()">Download PDF <i class="bi bi-download"></i></a> -->
-
+      
       <section class="code-page">
         <div class="container" data-aos="fade-up">
           <div class="row w-100">
@@ -136,8 +134,8 @@
                           <dotlottie-player src="https://lottie.host/4c5a3938-af56-4672-813e-8e715777239e/OCjdk1cX9v.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
                           </div>
                           <h3 style="letter-spacing: 2px;">
-                            Sridharan S </br>
-                            2022PECCS474
+                            Balachandar K</br>
+                            2022PECIT433
                           </h3>
                         </div>
                       </div>
@@ -168,8 +166,8 @@
                           <dotlottie-player src="https://lottie.host/4c5a3938-af56-4672-813e-8e715777239e/OCjdk1cX9v.json" background="transparent" speed="1" style="width: 150px; height: 150px;" loop autoplay></dotlottie-player>
                           </div>
                           <h3 style="letter-spacing: 2px;">
-                            Mohammed Jasim <br/>
-                            2022PECCS498
+                            Iraiyanbu S<br/>
+                            2022PECIT473
                           </h3>
                         </div>
                       </div>
@@ -188,75 +186,12 @@
           </div>
         </div>
     </section>
-  
+    <br>
+    <a class="btn-register2" href="https://www.hackerrank.com/contests/summer-codeblitzweek-3/leaderboard" target="_blank" style="margin-top: 20px;">View Full Leaderboard <i class="bi bi-arrow-right"></i></a>
+             
     </div>
 
-    <section class="code-page" style="padding: 30px; overflow-x: auto;">
-      <div class="container d-flex flex-column align-items-center justify-content-center" data-aos="zoom-in">
-        
-        <span style="font-family: 'Nabla', sans-serif; font-size: 60px; margin-bottom: 50px;">Leaderboard</span>
-        <!-- <a class="btn-download" style="margin-bottom: 30px; cursor: pointer;"  onclick="downloadResult()">Download PDF <i class="bi bi-download"></i></a> -->
-
-      </div>
-      
-        <table id="teamTable" class="datatable">
-          <thead>
-            <tr>
-              <th style="text-align: center;">RANK</th>
-              <th style="text-align: center;">NAME</th>
-              <th style="text-align: center;">SCORE(Out Of 1000)</th>
-              <th style="text-align: center;">TIME(HH:MM:SS)</th>
-              <th style="text-align: center;">ROLL NUMBER</th>
-              <th style="text-align: center;">YEAR OF STUDY</th>
-              <th style="text-align: center;">DEPARTMENT</th>
-              
-              <!-- <th style="text-align: center;">SECTION</th> -->
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Your table body content goes here -->
-          </tbody>
-        </table>
-    </section>
-
-    <!-- <section class="codeblitz-page">
-      <div class="container d-flex flex-column align-items-center justify-content-center code-blitz-chart-text-container" data-aos="zoom-in">
-        <span style="font-family: Nabla; font-size: 60px; text-align: center; padding-bottom: 20px;">Percentage of Participants</span>
-      </div>
-        <div class="container" data-aos="fade-up">
-          <div class="row">
-                <div class="container mt-4">
-                  <div class="code-blitz-card-1">
-                    <div class="card-body">
-                      <div style="display: flex; justify-content: center; justify-content: center;">
-                      </div>
-                        <p class="rules">
-                            <div class="code-blitz-background">
-                                  <div class="container" data-aos="fade-up">
-                                      <div class="code-blitz-card-2">
-                                          <div class="card-body">
-                                              <h3 class="title-h3 mb-4" style="font-family: bold;">Attendes by Department</h3>
-                                              <center><img class="code-blitz-chart-container" src="/assets/img/piechart.png" /></center>
-                                            </div>
-                                            <br>
-                                            <hr>
-                                            <div class="card-body">
-                                              <h3 class="title-h3 mb-4" style="font-family: bold; margin-top: 20px;">Attendes by Year of Study</h3>
-                                              <center><img class="code-blitz-chart-container" src="/assets/img/barchart.png" /></center>
-                                            </div>
-                                          </div>
-                                    </div>      
-                              </div>
-                        </p>
-                    </div>
-                  </div>
-                  
-                </div>   
-        </div>
-      </div>
-    </section> -->
-
-  </main><!-- End #main -->
+   
 
  <!-- ======= Footer ======= -->
  <footer id="footer">
@@ -374,43 +309,7 @@
     }
   </script> -->
 
-  <script>
-    async function fetchTeamData() {
-    try {
-        const response = await fetch('assets/results/leaderboard.json');
-        const data = await response.json();
-
-        const tableBody = document.querySelector('#teamTable tbody');
-
-        data.forEach((team, index) => {
-            const row = document.createElement('tr');
-
-            Object.entries(team).forEach(([key, value]) => {
-                const cell = document.createElement('td');
-                cell.textContent = value;
-
-                // Apply green color for TIME values of the first three members and red for the rest
-                if (key === "TIME") {
-                    if (index < 3) {
-                        cell.classList.add('time-cell-green');
-                    } 
-                }
-
-                row.appendChild(cell);
-            });
-
-            tableBody.appendChild(row);
-        });
-    } catch (error) {
-        console.error('Error fetching or parsing JSON:', error);
-    }
-}
-
-fetchTeamData();
-
-</script>
-
-
+  
 </body>
 
 </html>
