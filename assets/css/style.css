@@ -2400,3 +2400,52 @@ section {
 }
 
 }
+
+.btn-register2, .btn-download2{
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 10px;
+  border-width: 0px;
+  transition: 1s;
+  margin-top: 20px;
+  color: #FFF ;
+  background: linear-gradient(45deg, #eab011, #f8e252);
+}
+
+.btn-register2:hover, .btn-download2:hover  {
+  transition: 1s;
+  background: linear-gradient(45deg, #f8e252, #eab011);
+  color: #fff;
+}
+
+.cbi-container-1 .img{
+  height: 400px;
+  width:450px;
+  margin-top: 25px;
+}
+
+@media screen and (min-width:700px) {
+
+  .cbi-container-1{
+    max-width: 100%;
+    margin: 10px;
+    position:relative;
+  }
+  
+}
+
+.code-blitz-chart-container{
+  height:400px; 
+  width:600px; 
+  border-radius: 15px;
+}
+@media only screen and (max-width:678px) {
+  .code-blitz-chart-container{
+    width:100%;
+    align-items: center;
+  }
+}
