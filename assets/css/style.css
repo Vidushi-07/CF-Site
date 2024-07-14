@@ -1,5 +1,4 @@
 /*---------Timer---------*/
-
 .timer-container {
   height: 150px;
   max-width: 880px; 
@@ -842,9 +841,8 @@ h6 {
 }
 
 #hero .container {
-  position: relative;
-  padding-top: 74px;
   text-align: center;
+  align-items: center;
 }
 
 #hero h1 {
@@ -2448,4 +2446,21 @@ section {
     width:100%;
     align-items: center;
   }
+}
+
+#hero #confetti-canvas{
+  text-align: center;
+  align-items: center;
+  position:fixed;
+}
+#code-blitz-section .events-img{
+  height:600px;
+  width:600px;
+}
+
+@media only screen and (max-width:678px) {
+  #code-blitz-section .events-img{
+    height: auto;
+    width: 520px;
+}
 }

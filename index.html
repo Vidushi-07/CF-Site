@@ -40,6 +40,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
     <script>
@@ -76,50 +77,49 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div class="col-xl-10 col-lg-10">
-          <h1 id = "index-hero">Coders Forum</h1>
-          <br>
-          <h3 >Where Inspiration Meets Creation!</h3>
+    <canvas id="confetti-canvas"></canvas>
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-xl-10 col-lg-10">
+            <h1 id = "index-hero" >Coders Forum</h1>
+            <br>
+            <h3 >Where Inspiration Meets Creation!</h3>
+          </div>
         </div>
+        <!--<div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-store-line"></i>
+              <h3><a href="">Lorem Ipsum</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-bar-chart-box-line"></i>
+              <h3><a href="">Dolor Sitema</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-calendar-todo-line"></i>
+              <h3><a href="">Sedare Perspiciatis</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-paint-brush-line"></i>
+              <h3><a href="">Magni Dolores</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4">
+            <div class="icon-box">
+              <i class="ri-database-2-line"></i>
+              <h3><a href="">Nemos Enimade</a></h3>
+            </div>
+          </div>
+        </div>-->
+
       </div>
-      
-      <!--<div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line"></i>
-            <h3><a href="">Lorem Ipsum</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line"></i>
-            <h3><a href="">Dolor Sitema</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line"></i>
-            <h3><a href="">Sedare Perspiciatis</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line"></i>
-            <h3><a href="">Magni Dolores</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line"></i>
-            <h3><a href="">Nemos Enimade</a></h3>
-          </div>
-        </div>
-      </div>-->
-
-    </div>
   </section><!-- End Hero -->
 
   <main id="main">
@@ -506,6 +506,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <script src="assets/confetti-js-master/dist/index.min.js"></script>
+
 
 <script>
     const div1 = document.getElementById('resource-1');
@@ -555,6 +558,18 @@
   });
 </script> 
 
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const confettiSettings = { target: 'confetti-canvas' };
+    const confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+
+    setTimeout(() => {
+      confetti.clear();
+    },20000); 
+  });
+
+</script>
 </body>
 
 </html>
