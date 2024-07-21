@@ -33,14 +33,6 @@
     },
     {
         "RANK": 1,
-        "NAME": "Rishab h",
-        "SCORE": 999.0,
-        "ROLLNUMBER": "2021PECCS347",
-        "YEAR": "IV",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 1,
         "NAME": "Mohammed aashif.h",
         "SCORE": 1000.0,
         "ROLLNUMBER": "2022PECCS500",
@@ -48,7 +40,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 7,
+        "RANK": 6,
         "NAME": "Mohamed jasim",
         "SCORE": 999.0,
         "ROLLNUMBER": "2022PECCS498",
@@ -56,10 +48,18 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 7,
+        "RANK": 6,
         "NAME": "Madhavakumar d",
         "SCORE": 999.0,
         "ROLLNUMBER": "2021PECCS312",
+        "YEAR": "IV",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 6,
+        "NAME": "Rishab h",
+        "SCORE": 999.0,
+        "ROLLNUMBER": "2021PECCS347",
         "YEAR": "IV",
         "DEPARTMENT": "CSE"
     },
