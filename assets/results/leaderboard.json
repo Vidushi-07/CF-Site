@@ -1,4 +1,5 @@
 [
+    
     {
         "RANK": 1,
         "NAME": "Sridharan s",
@@ -7,6 +8,7 @@
         "YEAR": "III",
         "DEPARTMENT": "CSE"
     },
+
     {
         "RANK": 1,
         "NAME": "Jenita c",
@@ -40,7 +42,15 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 6,
+        "RANK": 1,
+        "NAME": "Jannat s",
+        "SCORE": 1000.0,
+        "ROLLNUMBER": "2022PECCS180",
+        "YEAR": "III",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 7,
         "NAME": "Mohamed jasim",
         "SCORE": 999.0,
         "ROLLNUMBER": "2022PECCS498",
@@ -48,7 +58,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 6,
+        "RANK": 7,
         "NAME": "Madhavakumar d",
         "SCORE": 999.0,
         "ROLLNUMBER": "2021PECCS312",
@@ -56,7 +66,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 6,
+        "RANK": 7,
         "NAME": "Rishab h",
         "SCORE": 999.0,
         "ROLLNUMBER": "2021PECCS347",
@@ -64,7 +74,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 9,
+        "RANK": 10,
         "NAME": "Nikhitha k.v.",
         "SCORE": 941.67,
         "ROLLNUMBER": "2022PECCS227",
@@ -72,7 +82,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 9,
+        "RANK": 10,
         "NAME": "Srinithi annamalai",
         "SCORE": 941.67,
         "ROLLNUMBER": "2022PECCS302",
@@ -80,7 +90,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 11,
+        "RANK": 12,
         "NAME": "Johith raj  s s",
         "SCORE": 940.0,
         "ROLLNUMBER": "2022PECCS578",
@@ -88,7 +98,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 11,
+        "RANK": 12,
         "NAME": "Sakkthivel theyagarajan",
         "SCORE": 940.0,
         "ROLLNUMBER": "2021PECCB223",
@@ -96,7 +106,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 13,
+        "RANK": 14,
         "NAME": "Sudarson bharathwaaj",
         "SCORE": 920.0,
         "ROLLNUMBER": "2022PECCS373 ",
@@ -104,7 +114,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 13,
+        "RANK": 14,
         "NAME": "Sanjay s",
         "SCORE": 920.0,
         "ROLLNUMBER": "2023PECML282",
@@ -112,7 +122,7 @@
         "DEPARTMENT": "AIML"
     },
     {
-        "RANK": 15,
+        "RANK": 16,
         "NAME": "Roffin jason",
         "SCORE": 841.67,
         "ROLLNUMBER": "2021PECCB222",
@@ -120,7 +130,15 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 16,
+        "RANK": 17,
+        "NAME": "Monisha v",
+        "SCORE": 820.0,
+        "ROLLNUMBER": "2022PECCS222",
+        "YEAR": "III",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 18,
         "NAME": "Janani ",
         "SCORE": 800.0,
         "ROLLNUMBER": "2023PECML121",
@@ -128,7 +146,7 @@
         "DEPARTMENT": "AIML"
     },
     {
-        "RANK": 16,
+        "RANK": 18,
         "NAME": "Naveen kumar",
         "SCORE": 800.0,
         "ROLLNUMBER": "2022PECCS518",
@@ -136,15 +154,15 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 16,
-        "NAME": "Jannat s",
+        "RANK": 18,
+        "NAME": "Madhumitha v",
         "SCORE": 800.0,
-        "ROLLNUMBER": "2022PECCS180",
+        "ROLLNUMBER": "2022PECCS210",
         "YEAR": "III",
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 19,
+        "RANK": 21,
         "NAME": "Jeswin rhymond",
         "SCORE": 786.67,
         "ROLLNUMBER": "2021PECCS296",
@@ -152,7 +170,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 20,
+        "RANK": 22,
         "NAME": "Balachandar k",
         "SCORE": 766.67,
         "ROLLNUMBER": "2022PECIT433",
@@ -160,7 +178,7 @@
         "DEPARTMENT": "IT"
     },
     {
-        "RANK": 20,
+        "RANK": 22,
         "NAME": "Hari nandha kumar c",
         "SCORE": 766.67,
         "ROLLNUMBER": "2022PECCB321",
@@ -168,7 +186,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 22,
+        "RANK": 24,
         "NAME": "Jaganathan s",
         "SCORE": 741.67,
         "ROLLNUMBER": "2022PECIT476",
@@ -176,7 +194,7 @@
         "DEPARTMENT": "IT"
     },
     {
-        "RANK": 23,
+        "RANK": 25,
         "NAME": "Giridharan p",
         "SCORE": 720.0,
         "ROLLNUMBER": "2022PECML132",
@@ -184,7 +202,7 @@
         "DEPARTMENT": "AIML"
     },
     {
-        "RANK": 24,
+        "RANK": 26,
         "NAME": "Michael josil  m",
         "SCORE": 718.18,
         "ROLLNUMBER": "2021PECCS323",
@@ -192,7 +210,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 25,
+        "RANK": 27,
         "NAME": "Dhinesh k",
         "SCORE": 700.0,
         "ROLLNUMBER": "2021PECCC138",
@@ -200,15 +218,7 @@
         "DEPARTMENT": "CCE"
     },
     {
-        "RANK": 25,
-        "NAME": "Monisha v",
-        "SCORE": 700.0,
-        "ROLLNUMBER": "2022PECCS222",
-        "YEAR": "III",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 27,
+        "RANK": 28,
         "NAME": "Ponnandhakumar p",
         "SCORE": 600.0,
         "ROLLNUMBER": "2021PECCS337",
@@ -216,7 +226,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 27,
+        "RANK": 28,
         "NAME": "Abhinaya k",
         "SCORE": 600.0,
         "ROLLNUMBER": "2022PECCS105",
@@ -224,7 +234,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 27,
+        "RANK": 28,
         "NAME": "Shruti .s",
         "SCORE": 600.0,
         "ROLLNUMBER": "2022PECCS294",
@@ -232,19 +242,11 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 27,
+        "RANK": 28,
         "NAME": "Jeswin joseph",
         "SCORE": 600.0,
         "ROLLNUMBER": "2021PECCS295",
         "YEAR": "IV",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 27,
-        "NAME": "Madhumitha v",
-        "SCORE": 600.0,
-        "ROLLNUMBER": "2022PECCS210",
-        "YEAR": "III",
         "DEPARTMENT": "CSE"
     },
     {
@@ -537,6 +539,14 @@
     },
     {
         "RANK": 67,
+        "NAME": "Gunashri sivakumar",
+        "SCORE": 300.0,
+        "ROLLNUMBER": "2021PECCS131",
+        "YEAR": "IV",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 67,
         "NAME": "Arthi c s",
         "SCORE": 300.0,
         "ROLLNUMBER": "2022PECEC114",
@@ -568,7 +578,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 72,
+        "RANK": 73,
         "NAME": "Janani murali",
         "SCORE": 290.0,
         "ROLLNUMBER": "2022PECCS176",
@@ -576,7 +586,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 73,
+        "RANK": 74,
         "NAME": "Mithra jenifer",
         "SCORE": 281.67,
         "ROLLNUMBER": "2023PECCS276",
@@ -584,7 +594,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 74,
+        "RANK": 75,
         "NAME": "Paramash senthil",
         "SCORE": 280.0,
         "ROLLNUMBER": "2022PECS533",
@@ -592,7 +602,7 @@
         "DEPARTMENT": "S5E"
     },
     {
-        "RANK": 75,
+        "RANK": 76,
         "NAME": "Athavan k",
         "SCORE": 266.67,
         "ROLLNUMBER": "2022PECIT431",
@@ -600,7 +610,7 @@
         "DEPARTMENT": "IT"
     },
     {
-        "RANK": 75,
+        "RANK": 76,
         "NAME": "Arshitha yasmin s",
         "SCORE": 266.67,
         "ROLLNUMBER": "2022PECCS125",
@@ -608,7 +618,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 75,
+        "RANK": 76,
         "NAME": "Swathy s",
         "SCORE": 266.67,
         "ROLLNUMBER": "2021PECCS210",
@@ -616,7 +626,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 78,
+        "RANK": 79,
         "NAME": "Logesh kumar",
         "SCORE": 250.0,
         "ROLLNUMBER": "2022PECCS484",
@@ -624,7 +634,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 79,
+        "RANK": 80,
         "NAME": "Uma mageshwari",
         "SCORE": 241.67,
         "ROLLNUMBER": "2023PECCS431",
@@ -632,7 +642,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 80,
+        "RANK": 81,
         "NAME": "Soma akash perni",
         "SCORE": 216.67,
         "ROLLNUMBER": "2021PECCS336",
@@ -640,15 +650,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
-        "NAME": "Gunashri sivakumar",
-        "SCORE": 200.0,
-        "ROLLNUMBER": "2021PECCS131",
-        "YEAR": "IV",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Swarnalakshmi  s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2023PECAI266",
@@ -656,7 +658,7 @@
         "DEPARTMENT": "AIDS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Manoj sai",
         "SCORE": 200.0,
         "ROLLNUMBER": "2021PECCS319",
@@ -664,7 +666,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Nevil arul jevin v",
         "SCORE": 200.0,
         "ROLLNUMBER": "2021PECCS334",
@@ -672,7 +674,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Vaishnavi babu",
         "SCORE": 200.0,
         "ROLLNUMBER": "2023PECML181",
@@ -680,7 +682,7 @@
         "DEPARTMENT": "AIML"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Manoj.s selvaraj.r",
         "SCORE": 200.0,
         "ROLLNUMBER": "2020PECCS493",
@@ -688,7 +690,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Janani b",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB129",
@@ -696,7 +698,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Jayaprakash s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2021PECCS289",
@@ -704,7 +706,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Sanjay a",
         "SCORE": 200.0,
         "ROLLNUMBER": "2021PECCS228",
@@ -712,7 +714,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Y r  lokranjan",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS485",
@@ -720,7 +722,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Mohan babu",
         "SCORE": 200.0,
         "ROLLNUMBER": "2021PECCS326",
@@ -728,7 +730,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Kari charan",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB340",
@@ -736,7 +738,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Muthu subramanian p",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS513",
@@ -744,7 +746,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Pradeep s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS538",
@@ -752,7 +754,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Muthamizh tech",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS511",
@@ -760,7 +762,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Nithish s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS529",
@@ -768,7 +770,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Premkumar  g m",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS540",
@@ -776,7 +778,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Kalaimathi p",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB136",
@@ -784,7 +786,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Jaya sudha",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB131",
@@ -792,7 +794,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Arjun raj",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB296",
@@ -800,7 +802,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Aswini ",
         "SCORE": 200.0,
         "ROLLNUMBER": "20222PECCB111",
@@ -808,7 +810,7 @@
         "DEPARTMENT": "CCE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Kisoshamilisha j",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB141",
@@ -816,7 +818,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "V.arunachalam ",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB298",
@@ -824,7 +826,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Nethra shivani",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB157",
@@ -832,7 +834,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Inba kumar",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB330",
@@ -840,7 +842,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Ilakiyaa p",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB125",
@@ -848,7 +850,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Keerthivarsan l",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB343",
@@ -856,7 +858,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Chethana maramreddy",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB153",
@@ -864,7 +866,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Madhav shankar a",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB233",
@@ -872,7 +874,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Gayathri s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB117",
@@ -880,7 +882,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Dhanya sri s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB114",
@@ -888,7 +890,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Kalaiarasi v",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB135",
@@ -896,7 +898,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Jeslin fernando",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB133",
@@ -904,7 +906,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Srinidhi s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB104",
@@ -912,7 +914,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Devottham d k",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB308",
@@ -920,7 +922,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Abinaya k",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB101",
@@ -928,7 +930,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "R kumaresan",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB349",
@@ -936,7 +938,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Bavanagaran r",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB222",
@@ -944,7 +946,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Padmaprabha k",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB198",
@@ -952,7 +954,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Giridharshini d.k.",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB116",
@@ -960,7 +962,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Murali krishnan s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS509",
@@ -968,7 +970,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Allen roddick",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS625",
@@ -976,7 +978,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Abishek bharath d",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS609",
@@ -984,7 +986,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Emmanuel prithish",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS663",
@@ -992,7 +994,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Dharsan s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCS658",
@@ -1000,7 +1002,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Ruthresh m",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB221",
@@ -1008,7 +1010,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Abdullah r",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB220",
@@ -1016,7 +1018,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Abishek ",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB226",
@@ -1024,7 +1026,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Raghu r",
         "SCORE": 200.0,
         "ROLLNUMBER": "2023PECCB249",
@@ -1032,7 +1034,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Kaavini a n",
         "SCORE": 200.0,
         "ROLLNUMBER": "2023PECCB138",
@@ -1040,7 +1042,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Priyadharshan g",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB250",
@@ -1048,7 +1050,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Rithik k",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB254",
@@ -1056,7 +1058,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Bharanidharan k",
         "SCORE": 200.0,
         "ROLLNUMBER": "2023PECCB309",
@@ -1064,7 +1066,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Shreya ravichandiran",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB175",
@@ -1072,7 +1074,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Nandhakumar r",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB240",
@@ -1080,7 +1082,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Enos nishanth j",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB316",
@@ -1088,7 +1090,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Niroshini murugadas",
         "SCORE": 200.0,
         "ROLLNUMBER": "2023PECCB160",
@@ -1096,7 +1098,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Loga aravindan s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2023PECAI427",
@@ -1104,7 +1106,7 @@
         "DEPARTMENT": "AIDS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Santhosh kumar",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB260",
@@ -1112,7 +1114,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Sahithi mahesh",
         "SCORE": 200.0,
         "ROLLNUMBER": "2023PECAI129",
@@ -1120,7 +1122,7 @@
         "DEPARTMENT": "AIDS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Varsha r",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECCB194",
@@ -1128,7 +1130,15 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
+        "NAME": "N md shakeel",
+        "SCORE": 200.0,
+        "ROLLNUMBER": "2022PECCB237",
+        "YEAR": "III",
+        "DEPARTMENT": "CSBS"
+    },
+    {
+        "RANK": 82,
         "NAME": "Manikandan s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2021PECCB205",
@@ -1136,7 +1146,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Adithya aziyavaram",
         "SCORE": 200.0,
         "ROLLNUMBER": "2021PECCB166",
@@ -1144,7 +1154,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 81,
+        "RANK": 82,
         "NAME": "Lokesh s",
         "SCORE": 200.0,
         "ROLLNUMBER": "2022PECAI250",
@@ -1152,7 +1162,7 @@
         "DEPARTMENT": "AIDS"
     },
     {
-        "RANK": 145,
+        "RANK": 146,
         "NAME": "Kalaiarasan g",
         "SCORE": 191.67,
         "ROLLNUMBER": "2022PECCS582",
@@ -1160,7 +1170,7 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 146,
+        "RANK": 147,
         "NAME": "Kaviya g",
         "SCORE": 180.0,
         "ROLLNUMBER": "2022PECCB138",
@@ -1168,7 +1178,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 146,
+        "RANK": 147,
         "NAME": "Abinaya s",
         "SCORE": 180.0,
         "ROLLNUMBER": "2022PECCB102 ",
@@ -1176,15 +1186,7 @@
         "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 146,
-        "NAME": "N md shakeel",
-        "SCORE": 180.0,
-        "ROLLNUMBER": "2022PECCB237",
-        "YEAR": "III",
-        "DEPARTMENT": "CSBS"
-    },
-    {
-        "RANK": 146,
+        "RANK": 147,
         "NAME": "Ranji ",
         "SCORE": 180.0,
         "ROLLNUMBER": "2022PECAI181",
@@ -1705,6 +1707,22 @@
     },
     {
         "RANK": 214,
+        "NAME": "Loga aravindan",
+        "SCORE": 20.0,
+        "ROLLNUMBER": "2023PECAI427 ",
+        "YEAR": "II",
+        "DEPARTMENT": "AIDS"
+    },
+    {
+        "RANK": 214,
+        "NAME": "Srika n",
+        "SCORE": 20.0,
+        "ROLLNUMBER": "2022PECCB180",
+        "YEAR": "III",
+        "DEPARTMENT": "CSBS"
+    },
+    {
+        "RANK": 216,
         "NAME": "Senthil kumaran",
         "SCORE": 0.0,
         "ROLLNUMBER": "2022pecai348",
@@ -1712,95 +1730,23 @@
         "DEPARTMENT": "AIDS"
     },
     {
-        "RANK": 214,
-        "NAME": "Ajay bala",
+        "RANK": 216,
+        "NAME": "Niranjan k",
         "SCORE": 0.0,
-        "ROLLNUMBER": "2022PECCS615",
+        "ROLLNUMBER": "2022PECAI299",
         "YEAR": "III",
-        "DEPARTMENT": "CSE"
+        "DEPARTMENT": "AIDS"
     },
     {
-        "RANK": 214,
-        "NAME": "Dinesh kumar",
+        "RANK": 216,
+        "NAME": "Harsath abinav ",
         "SCORE": 0.0,
-        "ROLLNUMBER": "2021PECCS387",
-        "YEAR": "IV",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 214,
-        "NAME": "Mr.lathikesh waran",
-        "SCORE": 0.0,
-        "ROLLNUMBER": "2021peccs306",
-        "YEAR": "IV",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 214,
-        "NAME": "Priyadharshini r",
-        "SCORE": 0.0,
-        "ROLLNUMBER": "2022PECCS251",
+        "ROLLNUMBER": "2022PECCB326",
         "YEAR": "III",
-        "DEPARTMENT": "CSE"
+        "DEPARTMENT": "CSBS"
     },
     {
-        "RANK": 214,
-        "NAME": "Ken boston",
-        "SCORE": 0.0,
-        "ROLLNUMBER": "2021peccs300",
-        "YEAR": "IV",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 214,
-        "NAME": "Nesar kaviyan",
-        "SCORE": 0.0,
-        "ROLLNUMBER": "2022PECCS525",
-        "YEAR": "III",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 214,
-        "NAME": "A laasya",
-        "SCORE": 0.0,
-        "ROLLNUMBER": "2022PECCS205",
-        "YEAR": "III",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 214,
-        "NAME": "Madesh r k k",
-        "SCORE": 0.0,
-        "ROLLNUMBER": "2022PECCS486",
-        "YEAR": "III",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 214,
-        "NAME": "Martin raj",
-        "SCORE": 0.0,
-        "ROLLNUMBER": "2022peccs493",
-        "YEAR": "III",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 214,
-        "NAME": "Naveen c",
-        "SCORE": 0.0,
-        "ROLLNUMBER": "2022PECCS520",
-        "YEAR": "III",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 214,
-        "NAME": "K kumar",
-        "SCORE": 0.0,
-        "ROLLNUMBER": "2021PECCS306",
-        "YEAR": "IV",
-        "DEPARTMENT": "CSE"
-    },
-    {
-        "RANK": 214,
+        "RANK": 216,
         "NAME": "Yamini r",
         "SCORE": 0.0,
         "ROLLNUMBER": "2022PECCS334",
@@ -1808,11 +1754,131 @@
         "DEPARTMENT": "CSE"
     },
     {
-        "RANK": 214,
+        "RANK": 216,
+        "NAME": "Naveen c",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2022PECCS520",
+        "YEAR": "III",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Ken boston",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2021peccs300",
+        "YEAR": "IV",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Naveena harikrishnan",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2023PECCS287",
+        "YEAR": "II",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "A laasya",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2022PECCS205",
+        "YEAR": "III",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Ajay bala",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2022PECCS615",
+        "YEAR": "III",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Madesh r k k",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2022PECCS486",
+        "YEAR": "III",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Dinesh kumar",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2021PECCS387",
+        "YEAR": "IV",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Nesar kaviyan",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2022PECCS525",
+        "YEAR": "III",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "K kumar",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2021PECCS306",
+        "YEAR": "IV",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Boomiga v",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2023PECAI124",
+        "YEAR": "II",
+        "DEPARTMENT": "AIDS"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Harinisri ashok",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2021PECCB112",
+        "YEAR": "IV",
+        "DEPARTMENT": "CSBS"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Priyadharshini r",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2022PECCS251",
+        "YEAR": "III",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Martin raj",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2022peccs493",
+        "YEAR": "III",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Mr.lathikesh waran",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2021peccs306",
+        "YEAR": "IV",
+        "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
         "NAME": "Akshayalakshmi sv",
         "SCORE": 0.0,
         "ROLLNUMBER": "2023peccs114",
         "YEAR": "II",
         "DEPARTMENT": "CSE"
+    },
+    {
+        "RANK": 216,
+        "NAME": "Rubesh r",
+        "SCORE": 0.0,
+        "ROLLNUMBER": "2022PECEE197",
+        "YEAR": "III",
+        "DEPARTMENT": "EEE"
     }
 ]
