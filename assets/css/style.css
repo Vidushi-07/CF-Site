@@ -2454,8 +2454,8 @@ section {
   position:fixed;
 }
 #code-blitz-section .events-img{
-  height:600px;
-  width:600px;
+  height:650px;
+  width:650px;
 }
 
 @media only screen and (max-width:678px) {
