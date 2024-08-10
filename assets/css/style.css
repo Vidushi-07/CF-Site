@@ -2462,7 +2462,31 @@ section {
   #code-blitz-section .events-img{
     height: auto;
     width: 520px;
-}
+  }
+  /* #code-blitz-section .code-blitz-events-img{
+    margin: auto;
+    padding: auto;
+  }
+  #code-blitz-section .portfolio-details-slider img {
+    width: 100%;
+  }
+  
+  #code-blitz-section .portfolio-details-slider{
+    margin: 0px;
+    padding: 0px;
+  }
+  #code-blitz-section .portfolio-info {
+    opacity: 0;
+    position: relative;
+    bottom: 100;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: flex-start;
+    padding: 0px;
+  } */
 }
 
 .cb-title-1{
@@ -2488,4 +2512,9 @@ section {
   display: flex;
   flex-direction: row;
   margin-top: 120px;
+}
+
+#code-blitz-section .code-blitz-events-img{
+  height:850px;
+  width:850px;
 }
