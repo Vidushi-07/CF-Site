@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Coders Forum | Interview Prep</title>
+
+  <meta name="title" content="Coders Forum | Panimalar" />
+  <meta name="description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta name="keywords" content="panimalar, cse, programmers club, coders forum, cse club, clubs, technical clubs, panimalar club, pani, pani club, panimalar tcs, tcs, progamming club, panimalar, progamming club, best club in panimalar, psdc, panimalar student, club at panimalar, society panimalar, college clubs, coding club chennai, chennai clubs, chennai coding, programming club chennai, tcs chennai, tamil nadu, club in tamilnadu, poonamallee clubs, poonamallee coding, college chennai, cultural chennai, college cultural chennai, club chennai, it chennai, chennai computers">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+
+  <link href="assets/img/club-logo.ico" rel="icon">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codersforum.netlify.app" />
+  <meta property="og:title" content="Coders Forum | Panimalar" />
+  <meta property="og:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta property="og:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://codersforum.netlify.app" />
+  <meta property="twitter:title" content="Coders Forum | Panimalar" />
+  <meta property="twitter:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta property="twitter:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3M7SMRS80F');
+    </script>
+    
+  <style>
+    body{
+      background-color: #000;
+    }
+    .mark {
+      color: #C80036;
+      background-color: #FFF5E1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #fff;
+    }
+
+    .hero-card {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      font-family: "Roboto";
+    }
+
+    .faq-card {
+      border-radius: 10px;
+      font-family: "Roboto";
+    }
+
+    .question {
+      cursor: pointer;
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .answer {
+      display: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 22px;
+    }
+
+    @media (max-width: 1200px) {
+      .container {
+        max-width: 95%;
+      }
+
+      .hero-card {
+        height: auto;
+      }
+
+      .card-body {
+        width: 40%;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+
+      .hero-card {
+        height: auto;
+      }
+
+      .card-body {
+        width: 80%;
+        padding: 10px;
+      }
+
+      .faq-card {
+        padding: 15px;
+      }
+
+      .faq-card h3 {
+        font-size: 1.5em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .hero-card {
+        height: 100vh;
+      }
+
+      .card-body {
+        width: 90%;
+        padding: 8px;
+      }
+
+      .faq-card {
+        padding: 10px;
+      }
+
+      .faq-card h3 {
+        font-size: 1em;
+      }
+    }
+    .box {
+           color: white;
+        }
+
+        .header {
+            background-color: black;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            border-color: black;
+            border-bottom: 8px;
+        }
+        .header h1 {
+          font-family: "Tajawal";
+          font-weight: bold;
+          font-style: normal;
+          color: black;
+          font-size: 50px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            padding-top: 50px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .btn-custom {
+            color: #fff;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-family: "Bree Serif";
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #2c9e12;
+            color: #ffffff;
+        }
+        .collapse-content {
+            margin-top: 20px;
+        }
+        .collapse-content p {
+            font-size: 18px;
+        }
+        .easy { color: green; }
+        .medium { color: orange; }
+        .hard { color: red; }
+
+       
+        .collapse.slide-horizontal {
+            position: relative;
+            transform: translateX(-100%);
+            transition: transform 0.4s ease;
+            width: 100%;
+        }
+        .collapse.show.slide-horizontal {
+            transform: translateX(0);
+        }
+
+        .box {
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #191919;
+            box-shadow: 5px 5px 5px 5px #191919;
+            margin-bottom: 30px;
+            border-color: #fafafa;
+        }
+        .btn-container {
+            text-align: center;
+        }
+
+        .row {
+            justify-content: center;
+        }
+
+        .btn {
+          background-color: green;
+          
+        }
+
+        .btn:hover {
+          background-color: green;
+        }
+
+        .easy {
+          color: black;
+        }
+
+        .medium {
+          color: black;
+        }
+
+        .hard {
+          color: black;
+        }
+
+        .btn1 {
+          width: 50%;
+          color: black;
+        }
+        
+        .box {
+           color: white;
+        }
+
+        .header {
+            background-color: black;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            border-color: black;
+            border-bottom: 8px;
+        }
+        .header h1 {
+          font-family: "Tajawal";
+          font-weight: bold;
+          font-style: normal;
+          color: black;
+          font-size: 50px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        /* .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            padding-top: 50px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        } */
+        .btn-custom {
+            color: #fff;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-family: 'Oswald', sans-serif;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #2c9e12;
+        }
+        .collapse-content {
+            margin-top: 20px;
+        }
+        .collapse-content p {
+            font-size: 18px;
+        }
+       
+        .collapse.slide-horizontal {
+            position: relative;
+            transform: translateX(-100%);
+            transition: transform 0.4s ease;
+            width: 100%;
+        }
+        .collapse.show.slide-horizontal {
+            transform: translateX(0);
+        }
+
+        .box {
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #191919;
+            box-shadow: 5px 5px 5px 5px #191919;
+            margin-bottom: 30px;
+            border-color: #fafafa;
+        }
+        .btn-container {
+            text-align: center;
+        }
+
+        .row {
+            justify-content: center;
+        }
+
+        .btn {
+          background-color: green;
+          
+        }
+
+        .btn:hover {
+          background-color: green;
+        }
+
+        .easy {
+          color: black;
+          font-family: 'Roboto';
+          font-weight: bolder;
+          font-size: 24px;
+
+        }
+
+        .medium {
+          color: black;
+          font-family: 'Roboto';
+          font-weight: bolder;
+          font-size: 24px;
+        }
+
+        .hard {
+          color: black;
+          font-family: 'Roboto';
+          font-weight: bolder;
+          font-size: 24px;
+        }
+
+        .btn1 {
+          width: 80%;
+          color: #ffffff;
+          font-family: "Bree Serif";
+        }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="#hero">Coders Forum</a></h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./about.html">About</a></li>
+          <li><a class="nav-link scrollto active" href="./Inter_Prep.html">Interview Prep</a></li>
+          <li><a class="nav-link scrollto " href="./events.html">Events</a></li>
+          <li><a class="nav-link scrollto " href="./practice.html">Practice</a></li>
+          <li><a class="nav-link scrollto" href="./gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="./walloffame.html">Wall Of Fame</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <!-- <canvas id="confetti-canvas"></canvas> -->
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-xl-10 col-lg-10">
+            <h1 style="font-size: 60px;" style="color: #fff;">INTERVIEW PREPARATION</h1>
+            <br>
+            <h3 ><span style="font-weight: bolder;">" </span>The way to get started is to quit talking and begin doing <span style="font-weight: bolder">"</span></h3>
+          </div>
+        </div>
+      </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Rules & Regulations Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <p style="color: #fff;">Rules & Regulations</p> 
+          <h2 class="mb-4">ADHERE TO IT</h2>
+          <div class="container bg-dark row-lg-3 row-md-4 row-sm-12" style="border: 2px;color: white;border-radius: 20px; width: 100%">
+            <ul class="p-5">
+                <li class="p-2" style="color:beige; font-size: 22px;">This platform is exclusive and open to all the Pre-Final and Final year Students of CSE Department of Panimalar Engineering College.</li>
+                <li class="p-2" style="color: white; font-size: 22px;">Students are requested to create a "Hackerrank" profile before starting.</li>
+                <li class="p-2" style="color: beige; font-size: 22px;">If you don't have an account, click this link and register yourself before starting the challenge
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                    </svg> 
+                    <a href="https://www.hackerrank.com/about-us/home/" class="text-decoration-none" style="font-weight:bold ; color: beige;">"Hackerrank"</a>
+                </li>
+                <li class="p-2" style="color: white; font-size: 22px;">All participants must register for the 30-day challenge before the start date to ensure proper tracking and participation.</li>
+                <li class="p-2" style="color: beige; font-size: 22px;">Make sure that you complete the task daily as consistency is the key.</li>
+                <li class="p-2" style="color: white; font-size: 22px;">Each day's challenge will be unlocked on daily bases, and participants should aim to submit their solutions before the next challenge is released.</li>
+                <li class="p-2" style="color: beige; font-size: 22px;">Ensure that your code passes all the provided test cases. Partial credit may be awarded if some test cases pass but not all.</li>
+                <li class="p-2" style="color: white; font-size: 22px;">You are allowed multiple attempts to solve the problem within the given time. The last submitted code will be considered for evaluation.</li>
+                <li class="p-2" style="color: beige; font-size: 22px;">Avoid plagiarism and copying from external sources.</li>
+                <li class="p-2" style="color: white; font-size: 22px;">The problem has to be solved in Java.</li>
+                <li class="p-2" style="color: beige; font-size: 22px;">After completing, make sure to submit the code.</li>
+                <li class="p-2" style="color: white; font-size: 22px;">A real-time leaderboard will be maintained based on problem-solving efficiency and consistency, encouraging a healthy competitive spirit.</li>
+            </ul>
+        </div>
+        
+        
+        </div>
+
+      </div>
+    </section><!-- Rules & Regulations Section -->
+
+
+    <!-- ======= Daily Challenges Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+    
+        <div class="section-title">
+          <p style="color: #fff;">Daily Challenges</p>
+          <h2>PUSH YOUR LIMITS</h2>
+        </div>
+
+        <div class="container section" style="font-family: 'oswald', San-serif;">
+          <div class="box bg-dark">
+              <div class="text-center mt-2 p-5">
+                  <h2>Day 1 Challenges</h2>
+                  <button class="btn btn-custom mt-3" data-bs-toggle="collapse" data-bs-target="#day1-challenges" style="font-family: 'Bree Serif';background-color: #FF8A08">
+                      View Challenges
+                  </button>
+              </div>
+              <div class="collapse slide-horizontal" id="day1-challenges">
+                  <div class="row collapse-content">
+                      <div class="col-md-3">
+                          <div class="card p-4 d-flex justify-content-center align-items-center">
+                              <h5 class="easy">Challenge 1</h5>
+                              <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card p-4 d-flex justify-content-center align-items-center">
+                              <h5 class="easy">Challenge 2</h5>
+                              <a href="#" class="btn btn1 center" style="border-radius: 8px;">Take Challenge</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card p-4 d-flex justify-content-center align-items-center">
+                              <h5 class="medium">Challenge 3</h5>
+                              <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card p-4 d-flex justify-content-center align-items-center">
+                              <h5 class="medium">Challenge 4</h5>
+                              <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card p-4 d-flex justify-content-center align-items-center" style="margin-top: 1rem;">
+                              <h5 class="hard">Challenge 5</h5>
+                              <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <div class="container section" style="font-family: 'oswald', San-serif;">
+        <div class="box bg-dark">
+            <div class="text-center mt-2 p-5">
+                <h2>Day 2 Challenges</h2>
+                <button class="btn btn-custom mt-3" data-bs-toggle="collapse" data-bs-target="#week3-challenges"  style="font-family: 'Bree Serif';background-color: #FF8A08">
+                    View Challenges
+                </button>
+            </div>
+            <div class="collapse" id="week3-challenges">
+                <div class="row collapse-content">
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="easy">Challenge 1</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3" >
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="medium">Challenge 2</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="hard">Challenge 3</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="medium">Challenge 4</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center" style="margin-top: 1rem;">
+                            <h5 class="hard">Challenge 5</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+      <div class="container section" style="font-family: 'oswald', San-serif;">
+          <div class="box bg-dark">
+              <div class="text-center mt-2 p-5">
+                  <h2>Day 3 Challenges</h2>
+                  <button class="btn btn-custom mt-3" data-bs-toggle="collapse" data-bs-target="#week2-challenges"  style="font-family: 'Bree Serif';background-color: #FF8A08">
+                      View Challenges
+                  </button>
+              </div>
+              <div class="collapse" id="week2-challenges">
+                  <div class="row collapse-content">
+                      <div class="col-md-3">
+                          <div class="card p-4 d-flex justify-content-center align-items-center">
+                              <h5 class="easy">Challenge 1</h5>
+                              <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card p-4 d-flex justify-content-center align-items-center">
+                              <h5 class="medium">Challenge 2</h5>
+                              <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card p-4 d-flex justify-content-center align-items-center">
+                              <h5 class="hard">Challenge 3</h5>
+                              <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card p-4 d-flex justify-content-center align-items-center">
+                              <h5 class="medium">Challenge 4</h5>
+                              <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="card p-4 d-flex justify-content-center align-items-center" style="margin-top: 1rem;">
+                            <h5 class="hard">Challenge 5 </h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Week 3 Challenges in Separate Box -->
+    <div class="container section" style="font-family: 'oswald', San-serif;">
+        <div class="box bg-dark">
+            <div class="text-center mt-2 p-5">
+                <h2>Day 4 Challenges</h2>
+                <button class="btn btn-custom mt-3" data-bs-toggle="collapse" data-bs-target="#week3-challenges"  style="font-family: 'Bree Serif';background-color: #FF8A08">
+                    View Challenges
+                </button>
+            </div>
+            <div class="collapse" id="week3-challenges">
+                <div class="row collapse-content">
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="easy">Challenge 1</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="medium">Challenge 2</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="hard">Challenge 3</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="medium">Challenge 4</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center" style="margin-top: 1rem;">
+                            <h5 class="hard">Challenge 5</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div class="container section" style="font-family: 'oswald', San-serif;">
+        <div class="box bg-dark">
+            <div class="text-center mt-2 p-5">
+                <h2>Day 5 Challenges</h2>
+                <button class="btn btn-custom mt-3" data-bs-toggle="collapse" data-bs-target="#week4-challenges"  style="font-family: 'Bree Serif';background-color: #FF8A08">
+                    View Challenges
+                </button>
+            </div>
+            <div class="collapse" id="week4-challenges">
+                <div class="row collapse-content">
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="easy">Challenge 1</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="medium">Challenge 2</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="hard">Challenge 3</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center">
+                            <h5 class="medium">Challenge 4</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-4 d-flex justify-content-center align-items-center" style="margin-top: 1rem;">
+                            <h5 class="hard">Challenge 5</h5>
+                            <a href="#" class="btn btn1" style="border-radius: 8px;">Take Challenge</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+      </div>
+    </section>
+    <!-- Daily Challenges Section -->
+
+    <!-- ======= FAQ Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p style="color: #fff;">Frequently Asked Questions (FAQS)</p> 
+          <h2 >ANSWERS YOU SEEK</h2>
+        </div>
+        <div class="container bg-dark p-5" style="border: 2px solid;border-radius: 20px;border-width: 0px;">
+          <div class="faq-card">
+            <div class="question" onclick="toggleAnswer('answer1', this)">
+              <h5><span>+</span> How should I prepare for an interview? </h5>
+            </div>
+            <div class="answer" id="answer1">
+              <p>Research the company, understand the job description, practice common interview questions, prepare questions to ask the interviewer, and review your resume to discuss your experiences confidently.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer2', this)">
+              <h5> <span>+</span> What is a coding interview?</h5>
+            </div>
+            <div class="answer" id="answer2">
+              <p>A coding interview is a technical assessment where candidates are asked to solve programming problems, typically using a whiteboard or an online coding platform. It assesses problem-solving skills, coding abilities, and knowledge of algorithms and data structures.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer3', this)">
+              <h5> <span>+</span> What programming languages should I know?</h5>
+            </div>
+            <div class="answer" id="answer3">
+              <p>It’s beneficial to be proficient in at least one programming language that you can use for coding interviews, such as Python, Java, or C++. Make sure to familiarize yourself with the language's syntax and common libraries.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer4', this)">
+              <h5><span>+</span> How should I prepare for a coding interview? </h5>
+            </div>
+            <div class="answer" id="answer4">
+              <p>Review data structures and algorithms, practice coding problems on platforms like LeetCode or HackerRank, and understand system design concepts. Mock interviews can also help simulate the interview experience.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer5', this)">
+              <h5><span>+</span> Should I consider internships before the placement process?</h5>
+            </div>
+            <div class="answer" id="answer5">
+              <p>Yes, internships provide practical experience, enhance your resume, and can often lead to full-time job offers. They also help you build a professional network.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer6', this)">
+              <h5><span>+</span> How can I practice my communication skills? </h5>
+            </div>
+            <div class="answer" id="answer6">
+              <p>Practice can be achieved through public speaking, writing, engaging in discussions, and participating in networking events. Joining groups like Toastmasters can also help improve verbal communication skills.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer7', this)">
+              <h5><span>+</span> How do I prepare for aptitude tests? </h5>
+            </div>
+            <div class="answer" id="answer7">
+              <p>Practice quantitative, verbal, and logical reasoning questions. Familiarize yourself with the format and time constraints of the test. Numerous online platforms offer mock tests for preparation.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer8', this)">
+              <h5> <span>+</span> Should I focus more on technical or soft skills? </h5>
+            </div>
+            <div class="answer" id="answer8">
+              <p>Both are important. Technical skills are crucial for performing the job, but soft skills like communication, teamwork, and problem-solving are equally valued by employers as they contribute to a positive work environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      </div>
+    </section><!-- FAQ Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Coders Forum</h3>
+              <p>
+                Department of Computer Science and Engineering<br>
+                Panimalar Engineering College, <br>
+                Bangalore Trunk Road,<br>
+                Varadharajapuram, Poonamallee <br>
+                Chennai - 600 123 <br><br>
+                <i class="bi bi-telephone" style = "color : #ffc451 ;"></i> &nbsp; <span style = "font-family : 'Consolas' ;">+91 93846 78960</span><br>
+                <i class="bi bi-envelope" style = "color : #ffc451 ;"></i> &nbsp; <a href="mailto:coders_forum@outlook.com" style = "color: #fff; font-family : 'Consolas' ;">coders_forum@outlook.com</a><br>
+            </p>
+
+              <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Coders-Forum" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/coders_forum/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" style = "display : flex ; align-items : center ; justify-content : center ;">
+            <img src="./assets/img/club-logo.png" style = "width : 300px; height : auto ;">
+          </div>
+          <div class="col-lg-4 col-md-6 d-none d-sm-block">
+              <div class="row">
+              <div class="col-sm-6 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-6 footer-links">
+                <h4>Initiators</h4>
+                <ul>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Mobile Two-Column Layout -->
+          <div class="col-12 footer-links d-md-none" style = "margin-top: 30px;">
+            <div class="row">
+              <div class="col-6">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h4>Initiators</h4>
+                <ul>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <script src="assets/confetti-js-master/dist/index.min.js"></script>
+
+
+<script>
+    const div1 = document.getElementById('resource-1');
+    const div2 = document.getElementById('resource-2');
+    const div3 = document.getElementById('resource-3');
+    const div4 = document.getElementById('resource-4');
+    const div5 = document.getElementById('resource-5');
+    const div6 = document.getElementById('resource-6');
+    const div7 = document.getElementById('resource-7');
+
+    div1.style.cursor = 'pointer';
+    div2.style.cursor = 'pointer';
+    div3.style.cursor = 'pointer';
+    div4.style.cursor = 'pointer';
+    div5.style.cursor = 'pointer';
+    div6.style.cursor = 'pointer';
+    div7.style.cursor = 'pointer';
+
+    div1.addEventListener('click', function() {
+        const linkToOpen = 'https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div2.addEventListener('click', function() {
+        const linkToOpen = 'https://www.udemy.com/course/docker-essentials/';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div3.addEventListener('click', function() {
+        const linkToOpen = 'https://www.youtube.com/watch?v=ot94H3-d5d8';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div5.addEventListener('click', function() {
+        const linkToOpen = 'practice.html';
+        window.open(linkToOpen, '_parent');
+    });
+
+    div6.addEventListener('click', function() {
+        const linkToOpen = 'https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div7.addEventListener('click', function() {
+      const linkToOpen = 'https://freeforstudents.org/';
+      window.open(linkToOpen, '_blank');
+  });
+</script> 
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const confettiSettings = { target: 'confetti-canvas' };
+    const confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+
+    setTimeout(() => {
+      confetti.clear();
+    },20000); 
+  });
+
+</script>
+
+<script>
+  function toggleAnswer(answerId, questionElement) {
+    const answer = document.getElementById(answerId);
+    const span = questionElement.querySelector('span');
+    
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      span.textContent = "+";
+    } else {
+      answer.style.display = "block";
+      span.textContent = "-";
+    }
+  }
+</script>
+
+</body>
+
+</html>
