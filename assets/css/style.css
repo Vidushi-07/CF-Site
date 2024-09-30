@@ -984,6 +984,14 @@ section {
   justify-content: center;
 }
 
+.IP-section-title{
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .section-title h2 {
   font-size: 14px;
   font-weight: 500;
@@ -1005,6 +1013,18 @@ section {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #373737;
+  font-family: "Poppins", sans-serif;
+}
+
+.IP-section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1033,10 +1053,29 @@ section {
   margin: 4px 10px;
 }
 
+.IP-section-title h2::after, h2::before{
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: inline-block;
+  background: gold;
+  margin: 4px 10px;
+}
+
 .section-title p {
   margin: 0;
   margin: 0;
   font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #1e1c1c;
+}
+
+.IP-section-title p{
+  margin: 0;
+  margin: 0;
+  font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
