@@ -534,10 +534,8 @@
           <div class="box bg-dark">
               <div class="text-center mt-2 p-5">
                   <h2>Day 1 Challenges</h2>
-                  <button class="btn btn-custom mt-3" id="day1-btn" data-bs-toggle="collapse" data-bs-target="#day1-challenges" >
-                    <i></i> View Challenges
-                    <!-- <i class="bi bi-lock"></i> View Challenges -->
-
+                  <button class="btn btn-custom mt-3" id="day1-btn" data-bs-toggle="collapse" data-bs-target="#day1-challenges" disabled>
+                    <i class="bi bi-lock"></i> View Challenges
                   </button>
               </div>
               <div class="collapse slide-horizontal" id="day1-challenges">
@@ -949,7 +947,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentDay = currentDate.getDate();
     const currentMonth = currentDate.getMonth() + 1;
     const currentYear = currentDate.getFullYear();
-    const challengeStartDate = 2;
+    const challengeStartDate = 1;
     const challengeEndDate = 31;
 
     if (currentMonth === 10 && currentYear === 2024) {
