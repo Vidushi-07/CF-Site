@@ -756,6 +756,51 @@
         </div>
     </div>  
 
+    <div class="container section" style="font-family: 'oswald', San-serif;">
+      <div class="box bg-dark">
+          <div class="text-center mt-2 p-5">
+              <h2>Day 6 Challenges</h2>
+              <button class="btn btn-custom mt-3" id="day7-btn" data-bs-toggle="collapse" data-bs-target="#day6-challenges" disabled>
+                <i class="bi bi-lock"></i> View Challenges
+              </button>
+          </div>
+          <div class="collapse" id="day6-challenges">
+              <div class="row collapse-content">
+                  <div class="col-md-3">
+                      <div class="card p-4 d-flex justify-content-center align-items-center">
+                          <h5 class="easy">Challenge 1</h5>
+                          <a href="https://www.hackerrank.com/challenges/30-class-vs-instance/problem?isFullScreen=true" class="btn btn1" style="border-radius: 8px;" target="_blank">Take Challenge</a>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card p-4 d-flex justify-content-center align-items-center">
+                          <h5 class="medium">Challenge 2</h5>
+                          <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/8-isitpossible-cf" class="btn btn1" style="border-radius: 8px;" target="_blank">Take Challenge</a>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card p-4 d-flex justify-content-center align-items-center">
+                          <h5 class="hard">Challenge 3</h5>
+                          <a href="https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true" class="btn btn1" style="border-radius: 8px;" target="_blank">Take Challenge</a>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card p-4 d-flex justify-content-center align-items-center">
+                          <h5 class="medium">Challenge 4</h5>
+                          <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/square-pattern-19-1" class="btn btn1" style="border-radius: 8px;" target="_blank">Take Challenge</a>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="card p-4 d-flex justify-content-center align-items-center" style="margin-top: 1rem;">
+                          <h5 class="hard">Challenge 5</h5>
+                          <a href="https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true" class="btn btn1" style="border-radius: 8px;" target="_blank">Take Challenge</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
       </div>
     </section>
     <!-- End of Daily Challenges Section -->
@@ -940,8 +985,7 @@
   <script src="assets/confetti-js-master/dist/index.min.js"></script>
 
 <script>
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   function unlockChallenges() {
     const currentDate = new Date();
     const currentDay = currentDate.getDate();
@@ -952,16 +996,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (currentMonth === 10 && currentYear === 2024) {
       for (let day = challengeStartDate; day <= challengeEndDate; day++) {
-        if (currentDay >= day) {
-          const btnId = `day${day}-btn`;
-          const button = document.getElementById(btnId);
+        const btnId = `day${day}-btn`;
+        const button = document.getElementById(btnId);
 
-          if (button) {
+        if (button) {
+          if (currentDay >= day) {
+            // Unlock challenges for the current and future days
             button.disabled = false;
             button.innerHTML = `<i class="bi bi-unlock"></i> View Challenges`;
             button.style.backgroundColor = "#FF8A08";
-            button.style.fontFamily="Bree Serif";
-            button.style.color = "#fffff";  
+            button.style.fontFamily = "Bree Serif";
+            button.style.color = "#ffffff";
+          }
+
+          // Lock previous two days' challenges when it's a new day
+          if (currentDay > day + 2) {
+            button.disabled = true;
+            button.innerHTML = `<i class="bi bi-lock"></i> View Challenges`;
+            button.style.backgroundColor = ""; // Grey background for locked
+            button.style.fontFamily = "Bree Serif";
+            button.style.color = "#ffffff"; // Black text for locked
           }
         }
       }
@@ -970,7 +1024,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   unlockChallenges();
 });
-
    
 </script>
 
