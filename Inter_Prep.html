@@ -1797,37 +1797,91 @@
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
   <script src="assets/confetti-js-master/dist/index.min.js"></script>
-
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const startDate = new Date('2024-12-04T00:00:00');
-    const now = new Date();
-    const challengeDuration = 72 * 60 * 60 * 1000; 
-    const totalChallenges = 30;
     
-    for (let day = 1; day <= totalChallenges; day++) {
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const startDate = new Date('2024-12-04T00:00:00');
+      const now = new Date();
+      const challengeDuration = 72 * 60 * 60 * 1000;
+      const totalChallenges = 30;
+  
+      function formatTime(ms) {
+        const totalSeconds = Math.floor(ms / 1000);
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+  
+        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      }
+  
+      for (let day = 1; day <= totalChallenges; day++) {
         const challengeStart = new Date(startDate.getTime() + (day - 1) * 24 * 60 * 60 * 1000);
         const challengeEnd = new Date(challengeStart.getTime() + challengeDuration);
-
+  
         const dayButton = document.getElementById(`day${day}-btn`);
-
+  
         if (now >= challengeStart && now <= challengeEnd) {
-            dayButton.disabled = false;
-            dayButton.innerHTML = `<i class="bi bi-unlock"></i> View Challenges`;
-            dayButton.style.backgroundColor = "#FF8A08";
-            dayButton.style.fontFamily = "Bree Serif";
-            dayButton.style.color = "#ffffff";
+          dayButton.disabled = false;
+          dayButton.innerHTML = `<i class="bi bi-unlock"></i> View Challenges`;
+          dayButton.style.backgroundColor = "#FF8A08";
+          dayButton.style.fontFamily = "Bree Serif";
+          dayButton.style.color = "#ffffff";
+  
+          if (day > 1) {
+            const prevButton = document.getElementById(`day${day - 1}-btn`);
+            const lockTime = challengeStart.getTime() + challengeDuration;
+  
+            const updateTimer = setInterval(() => {
+              const remainingTime = lockTime - new Date();
+  
+              if (remainingTime <= 0) {
+                clearInterval(updateTimer);
+                prevButton.disabled = true;
+                prevButton.style.backgroundColor = "#808080";
+                prevButton.style.fontFamily = "Bree Serif";
+                prevButton.style.color = "#ffffff";
+                prevButton.innerHTML = `<i class="bi bi-check-circle"></i> Completed`;
+              } else {
+                prevButton.disabled = false;
+                prevButton.style.backgroundColor = "red";
+                prevButton.style.fontFamily = "Bree Serif";
+                prevButton.innerHTML = `<i class="bi bi-clock"></i> Locks in: ${formatTime(remainingTime)}`;
+              }
+            }, 1000);
+          }
+        } else if (now < challengeStart && now >= new Date(startDate.getTime() + (day - 2) * 24 * 60 * 60 * 1000)) {
+          const updateTimer = setInterval(() => {
+            const remainingTime = challengeStart - new Date();
+  
+            if (remainingTime <= 0) {
+              clearInterval(updateTimer);
+              dayButton.disabled = false;
+              dayButton.innerHTML = `<i class="bi bi-unlock"></i> View Challenges`;
+              dayButton.style.backgroundColor = "#FF8A08";
+              dayButton.style.fontFamily = "Bree Serif";
+              dayButton.style.color = "#ffffff";
+            } else {
+              dayButton.disabled = true;
+              dayButton.innerHTML = `<i class="bi bi-lock"></i> Unlocks in: ${formatTime(remainingTime)}`;
+              dayButton.style.backgroundColor = "#2c9e12";
+              dayButton.style.fontFamily = "Bree Serif";
+              dayButton.style.color = "#ffffff";
+              dayButton.style.borderWidth = "0px";
+            }
+          }, 1000);
+        } else if (now > challengeEnd) {
+          dayButton.disabled = true;
+          dayButton.style.backgroundColor = "transparent";
+          dayButton.style.color = "#ffffff";
+          dayButton.innerHTML = `<i class="bi bi-check-circle"></i> Completed`;
         } else {
-            dayButton.disabled = true;
-            dayButton.innerHTML = `<i class="bi bi-lock"></i> View Challenges`;
+          dayButton.disabled = true;
+          dayButton.innerHTML = `<i class="bi bi-lock"></i> View Challenges`;
         }
-    }
-});
-
-</script>
-
+      }
+    });
+  </script>
+    
 
 <script>
     const div1 = document.getElementById('resource-1');
