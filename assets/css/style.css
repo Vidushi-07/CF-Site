@@ -1141,10 +1141,15 @@ section {
 .photo-frame {
   display: inline-block;
   width: 100%;
-  /*border: 10px solid #fcf2e0;
-  border: 10px solid rgb(252, 242, 224, 0.3);*/
   padding: 10px;
   }
+
+  .wall-of-fame-carousel-image {
+    max-height: 83%;
+    padding-bottom: 80px;
+    object-fit: contain; 
+}
+
 @media screen and (max-width: 768px) {
   .wall-of-fame-row {
     flex-direction: column;
@@ -2556,4 +2561,55 @@ section {
 #code-blitz-section .code-blitz-events-img{
   height:850px;
   width:850px;
+}
+
+@media screen and (max-width: 768px) {
+  .wall-of-fame-row {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: auto;
+      padding-bottom: 10px;
+  }
+
+  .col-md-3 {
+      order: -1;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .carousel-inner img {
+      max-height: 180px;
+      width: auto;
+      margin-bottom: 10px;
+  }
+
+  .wall-of-fame-column {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .section-title-wf h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+
+  .section-title-wf p {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+
+  .d-flex.align-items-center.justify-content-center {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #achieversCarousel {
+      width: 90% !important; /* Increase the width */
+      max-width: 200px; /* Set a reasonable max width */
+  }
 }
