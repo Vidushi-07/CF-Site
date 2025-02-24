@@ -2591,7 +2591,7 @@ section {
   }
 
   .section-title-wf h2 {
-      font-size: 18px;
+      font-size: 20px;
       margin-bottom: 15px;
   }
 
@@ -2611,5 +2611,27 @@ section {
   #achieversCarousel {
       width: 90% !important; /* Increase the width */
       max-width: 200px; /* Set a reasonable max width */
+  }
+}
+
+.wof-name-lap{
+  margin-top:0px;
+}
+
+.wof-roll-lap{
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .wof-name-lap{
+    position: relative;
+    top:25px;
+  }
+  .wof-name-lap-2{
+    position: relative;
+    top:50px;
+  }
+  .wof-roll-lap{
+    margin-top: 50px;
   }
 }
