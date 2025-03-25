@@ -1005,7 +1005,7 @@ section {
 }
 
 .section-title-wf h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -1014,6 +1014,7 @@ section {
   text-transform: uppercase;
   color: #373737;
   font-family: "Poppins", sans-serif;
+  width:500px;
 }
 
 .IP-section-title h2 {
