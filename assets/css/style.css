@@ -1033,7 +1033,7 @@ h2::before {
 }
 
 .section-title-wf h2::after,
-.section-title-wf h2::before {
+h2::before {
   content: "";
   width: 120px;
   height: 3px;
@@ -1043,17 +1043,34 @@ h2::before {
 }
 
 /* the lines before and after people's name which is larger than 15 characters is wrapping around next line, so selecting those abnormal divs and styling them below. */
-#walloffame :nth-child(14) .section-title-wf h2::after, #walloffame :nth-child(14) .section-title-wf h2::before,
-#walloffame :nth-child(15) .section-title-wf h2::after, #walloffame :nth-child(15) .section-title-wf h2::before,
-#walloffame :nth-child(16) .section-title-wf h2::after, #walloffame :nth-child(16) .section-title-wf h2::before,
-#walloffame :nth-child(17) .section-title-wf h2::after, #walloffame :nth-child(17) .section-title-wf h2::before
- {
+#walloffame :nth-child(14) .section-title-wf h2::after,
+#walloffame :nth-child(14) .section-title-wf h2::before,
+#walloffame :nth-child(15) .section-title-wf h2::after,
+#walloffame :nth-child(15) .section-title-wf h2::before,
+#walloffame :nth-child(16) .section-title-wf h2::after,
+#walloffame :nth-child(16) .section-title-wf h2::before,
+#walloffame :nth-child(17) .section-title-wf h2::after,
+#walloffame :nth-child(17) .section-title-wf h2::before {
   content: "";
   width: 70px;
   height: 3px;
   display: inline-block;
   background: gold;
   margin: 4px 10px;
+}
+
+/* Hide lines (::before and ::after) on mobile view */
+@media (max-width: 667px) {
+  #walloffame :nth-child(14) .section-title-wf h2::after,
+  #walloffame :nth-child(14) .section-title-wf h2::before,
+  #walloffame :nth-child(15) .section-title-wf h2::after,
+  #walloffame :nth-child(15) .section-title-wf h2::before,
+  #walloffame :nth-child(16) .section-title-wf h2::after,
+  #walloffame :nth-child(16) .section-title-wf h2::before,
+  #walloffame :nth-child(17) .section-title-wf h2::after,
+  #walloffame :nth-child(17) .section-title-wf h2::before {
+    display: none;
+  }
 }
 
 .IP-section-title h2::after,
