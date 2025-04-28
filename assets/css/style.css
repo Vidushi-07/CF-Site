@@ -1173,6 +1173,12 @@ h2::before {
   object-fit: contain;
 }
 
+@media (min-width:640px) and (max-width:768px){
+  .wall-of-fame-carousel-image {
+    margin-left: 30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .wall-of-fame-row {
     flex-direction: column;
