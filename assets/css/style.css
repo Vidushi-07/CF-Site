@@ -2648,3 +2648,81 @@ h4 {
     margin-top: 50px;
   }
 }
+
+#anniversary-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* dimmed background */
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#anniversary-popup.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-outer {
+  background: linear-gradient(135deg, #f6d365, #fda085, #a1c4fd, #c2e9fb);
+  background-size: 300% 300%;
+  animation: gradientShift 6s ease infinite;
+  padding: 8px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+.popup-inner {
+  background: #111;
+  padding: 40px 50px;
+  border-radius: 12px;
+  text-align: center;
+  width: 600px;
+  max-width: 100%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  animation: fadeInUp 0.4s ease-out;
+}
+
+.popup-inner h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fdd835;
+  margin-bottom: 10px;
+}
+
+.popup-inner h1 sup {
+  font-size: 0.6em;
+  vertical-align: super;
+  color: #fdd835; 
+}
+
+.popup-inner p {
+  font-size: 1rem;
+  color: white;
+  margin-top: 10px;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
